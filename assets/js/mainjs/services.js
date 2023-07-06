@@ -1,1 +1,1 @@
-promt("write your name");
+alert("Welcome to Syntway");
