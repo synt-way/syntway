@@ -1,0 +1,33 @@
+.footer {
+      background-color: #ddd;
+      padding: 20px;
+    }
+    .footer img {
+      max-width: 70px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .footer .navbar-nav {
+      margin-bottom: 10px;
+    }
+    .footer .navbar-nav li {
+      margin-right: 10px;
+    }
+    .footer .navbar-nav li:last-child {
+      margin-right: 0;
+    }
+    .footer .navbar-nav a {
+      color: #333;
+    }
+    .footer .address {
+      margin-bottom: 10px;
+    }
+    .footer .social-links a {
+      color: #333;
+      margin-right: 10px;
+    }
+  @media (orientation: landscape) {
+      .landscape-text {
+        text-align: center;
+      }
+    }

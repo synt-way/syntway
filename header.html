@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-center">Sign In</h2>
+    <form id="signInForm" class="needs-validation" novalidate>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+        <div class="invalid-feedback">Please enter a password.</div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+    </form>
+  </div>
+
+  <script>
+    // Define SignInForm class using OOP principles
+class SignInForm {
+  constructor(formId) {
+    this.form = document.getElementById(formId);
+    this.emailInput = this.form.querySelector('#email');
+    this.passwordInput = this.form.querySelector('#password');
+    this.form.addEventListener('submit', this.handleSubmit.bind(this));
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    if (this.form.checkValidity()) {
+      const email = this.emailInput.value;
+      const password = this.passwordInput.value;
+      this.displayResult(email, password);
+      this.resetForm();
+    }
+    this.form.classList.add('was-validated');
+  }
+
+  displayResult(email, password) {
+    const resultContainer = document.createElement('div');
+    resultContainer.innerHTML = `
+      <h3>Form Data:</h3>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Password:</strong> ${password}</p>
+    `;
+    document.body.appendChild(resultContainer);
+  }
+
+  resetForm() {
+    this.emailInput.value = '';
+    this.passwordInput.value = '';
+  }
+}
+
+// Create an instance of the SignInForm class
+const signInForm = new SignInForm('signInForm');
+
+  </script>
+</body>
+</html>
