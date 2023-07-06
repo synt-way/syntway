@@ -1,1 +1,1 @@
-alert("hi User");
+promt("write your name");
