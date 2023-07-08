@@ -1,0 +1,28 @@
+    /* Adjust as needed for your layout */
+    .sidebar {
+      background-color: #f8f9fa;
+    }
+    .content {
+      background-color: #fff;
+    }
+    .section {
+      height: 80vh;
+      overflow: auto;
+    }
+    .btn-control {
+      display: flex;
+      justify-content: space-around;
+    }
+    .btn-control .btn {
+      width: 100px;
+    }
+    .animate-section {
+      opacity: 0;
+      transition: opacity ease-in-out;
+    }
+    .animate-section.active {
+      opacity: 1;
+    }
+    .active-section {
+      color: red;
+    }
