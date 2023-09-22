@@ -26,4 +26,4 @@ export function redirectEducation() {
       }
     }
   }
-//redirectEducation();
+// redirectEducation();
