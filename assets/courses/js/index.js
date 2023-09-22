@@ -259,11 +259,11 @@ export function createAccordionItems(itemsData) {
 }
 
   // prettyprint coding 
-export function prettyprint() {
-    let code = document.querySelectorAll('code');
-    if (code) {
-      code.forEach((item) => {
-        item.classList.add("prettyprint");
-      });
-    }
-  }
+//export function prettyprint() {
+  //  let code = document.querySelectorAll('code');
+//    if (code) {
+//      code.forEach((item) => {
+ //       item.classList.add("prettyprint");
+ //     });
+//    }
+//  }
