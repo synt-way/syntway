@@ -1,0 +1,30 @@
+The `backface-visibility` property in CSS is used to control whether the back face of a 3D-transformed element is visible or hidden. It's commonly used in combination with CSS 3D transformations to determine whether the reverse side of an element is visible when it's rotated or transformed in 3D space.
+
+**Example:**
+```css
+.card {
+  transform: rotateY(180deg); /* Rotate the card around the Y-axis */
+  backface-visibility: hidden; /* Hide the back face of the card */
+}
+```
+
+**Why:**
+The `backface-visibility` property is used to control the visibility of the reverse side of an element when it's rotated or transformed in 3D space. This is particularly useful for creating visually pleasing 3D animations and transitions without exposing the unintended back side of an element.
+
+**Where:**
+Apply the `backface-visibility` property to elements that are transformed in 3D space and need to control the visibility of their reverse side.
+
+**How:**
+The `backface-visibility` property accepts values:
+- `visible`: The back face of the element is visible when transformed.
+- `hidden`: The back face of the element is hidden when transformed.
+
+**SEO:**
+The `backface-visibility` property itself doesn't have a direct impact on SEO. It's mainly used for visual and interactive effects in web design.
+
+**Additional Notes:**
+- The `backface-visibility` property is often used alongside other CSS 3D transformation properties like `transform` and `transform-style` to create 3D animations.
+- It's important to note that the `backface-visibility` property has no effect on non-transformed elements or elements that are transformed in 2D space.
+
+**Browser Support:**
+The `backface-visibility` property is supported in modern browsers, including Chrome, Firefox, Safari, and Edge. It is widely supported and provides consistent behavior across these browsers.

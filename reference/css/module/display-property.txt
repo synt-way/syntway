@@ -1,0 +1,66 @@
+**CSS Display Property**
+
+**What:**
+The `display` property in CSS is used to control how an element is rendered on the web page, determining whether it's treated as a block, inline, inline-block, or other types of display.
+
+**Example:**
+Here's an example of using the `display` property to adjust the layout of different elements:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .block {
+    display: block;
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+  }
+
+  .inline {
+    display: inline;
+    background-color: lightgreen;
+  }
+
+  .inline-block {
+    display: inline-block;
+    background-color: lightcoral;
+    width: 100px;
+    height: 100px;
+  }
+</style>
+</head>
+<body>
+
+<div class="block">Block</div>
+<span class="inline">Inline</span>
+<div class="inline-block">Inline Block</div>
+
+</body>
+</html>
+```
+
+**Why:**
+The `display` property is crucial for controlling the layout of elements. It allows you to determine how elements flow within their parent container, whether they stack vertically or horizontally, and how they interact with other elements.
+
+**Where:**
+The `display` property is used for every HTML element and is applicable whenever you need to control the layout and positioning of elements on a webpage.
+
+**How:**
+The `display` property can take various values, such as:
+- `block`: Renders an element as a block-level container.
+- `inline`: Renders an element as an inline container.
+- `inline-block`: Combines features of both block and inline elements.
+- `none`: Hides an element from the page layout.
+- And more...
+
+**SEO:**
+The `display` property itself does not have a direct impact on SEO. However, it affects the layout and user experience, which can indirectly influence SEO by affecting user engagement, time spent on the page, and other user behavior metrics.
+
+**Additional Notes:**
+- Combining `display` with other CSS properties, such as `float`, `position`, and `clear`, can further control the layout.
+- Some elements have default display values according to their semantics (e.g., `<div>` is a block-level element, `<span>` is an inline element).
+
+**Browser Support:**
+The `display` property is a fundamental part of CSS and is supported by all modern browsers. However, browser support for certain values or behaviors might vary. Always test your layout adjustments across different browsers to ensure consistent rendering.

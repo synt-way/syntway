@@ -1,0 +1,36 @@
+**1. What is the `<input type="reset">` Element?**
+The `<input type="reset">` element is an HTML input element that creates a button allowing users to reset form fields to their default values. When clicked, it restores the form's input fields to the values they had when the form was initially loaded or when the user last submitted the form.
+
+**2. Why Use the `<input type="reset">` Element?**
+The `<input type="reset">` element is used to provide users with a convenient way to clear all the input fields in a form and return them to their default or initial values. It can be useful when users want to undo their changes or start over while filling out a form.
+
+**3. Where Can the `<input type="reset">` Element Be Used?**
+The `<input type="reset">` element is typically used within HTML forms to allow users to reset the values of input fields, checkboxes, radio buttons, and other form controls.
+
+**4. How to Use the `<input type="reset">` Element?**
+Here's an example of how the `<input type="reset">` element can be used:
+
+```html
+<form>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username"><br>
+  
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password"><br>
+  
+  <input type="reset" value="Reset">
+  <input type="submit" value="Submit">
+</form>
+```
+
+In this example, the `<input type="reset">` button is placed within a form. Clicking the "Reset" button will clear the values entered into the "Username" and "Password" fields.
+
+**5. SEO (Search Engine Optimization) and `<input type="reset">`:**
+The `<input type="reset">` element doesn't directly impact SEO, as it's a user interface element for form functionality. However, using it correctly contributes to a better user experience on your website.
+
+**6. Additional Notes:**
+- Styling: You can use CSS to style the appearance of the reset button to match the design of your website.
+- Behavior: The reset button resets all form elements to their default values, including input fields, checkboxes, and radio buttons.
+
+**7. Browser Support:**
+The `<input type="reset">` element is supported by all modern web browsers. However, it's worth noting that the use of reset buttons has become less common in modern web design due to various usability and design considerations.

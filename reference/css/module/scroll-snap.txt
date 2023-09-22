@@ -1,0 +1,65 @@
+**CSS Scroll Snap**
+
+**What:**
+CSS Scroll Snap is a feature that allows you to create smooth and precise scrolling experiences by controlling how content "snaps" into view when scrolling. It's particularly useful for creating carousels, slideshows, and navigation through a series of content sections.
+
+**Example:**
+Here's an example of using CSS Scroll Snap to create a horizontal scroll snap effect:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+  }
+
+  .scroll-item {
+    width: 100%;
+    min-width: 300px;
+    height: 300px;
+    scroll-snap-align: start;
+    background-color: lightblue;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-right: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="scroll-container">
+  <div class="scroll-item">Item 1</div>
+  <div class="scroll-item">Item 2</div>
+  <div class="scroll-item">Item 3</div>
+</div>
+
+</body>
+</html>
+```
+
+**Why:**
+CSS Scroll Snap is used to create smoother scrolling experiences, improve navigation through content, and enhance the usability of carousels, image sliders, and other interactive elements.
+
+**Where:**
+CSS Scroll Snap is applicable whenever you want to create a smooth and controlled scrolling experience, such as:
+- Image sliders or carousels.
+- Horizontal or vertical scrolling sections.
+- Navigational elements that scroll to specific content.
+
+**How:**
+Use the `scroll-snap-type` property to define the snap behavior and the `scroll-snap-align` property to control where content should snap.
+
+**SEO:**
+CSS Scroll Snap itself doesn't have a direct impact on SEO. However, it can enhance user experience by providing smoother navigation and interaction, which can indirectly affect metrics like bounce rates and time on site.
+
+**Additional Notes:**
+- CSS Scroll Snap works best for touch-enabled devices but can also enhance desktop scrolling experiences.
+- Test your scroll snap effects across different devices to ensure consistent behavior and responsiveness.
+
+**Browser Support:**
+CSS Scroll Snap is supported by modern browsers. However, older browsers might not fully support all features, and certain properties might require browser-specific prefixes. Always test your scroll snap effects across different browsers to ensure consistent behavior.

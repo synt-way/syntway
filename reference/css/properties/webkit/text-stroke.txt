@@ -1,0 +1,43 @@
+The `-webkit-text-stroke` property is a non-standard CSS property used in older versions of WebKit-based browsers (such as Safari) to apply an outline or border to the text characters within an element. This property allows developers to create a border around the text, similar to the `border` property for other elements. As of my last knowledge update in September 2021, this property is still supported in WebKit-based browsers like Safari, but it's not part of the CSS standard and is not supported in other modern browsers like Chrome or Firefox.
+
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .outlined-text {
+    -webkit-text-stroke: 2px black; /* Add a 2-pixel black stroke to the text */
+    color: white; /* Set the text color */
+    font-size: 24px;
+  }
+</style>
+</head>
+<body>
+
+<p class="outlined-text">
+  This text has an outline.
+</p>
+
+</body>
+</html>
+```
+
+**Why:**
+The `-webkit-text-stroke` property was used to create an outline or border around text characters within an element. It allowed developers to add emphasis to the text and improve its visibility against different backgrounds.
+
+**Where:**
+In the context of its historical usage, the `-webkit-text-stroke` property could be applied to elements containing text content where an outlined effect was desired.
+
+**How:**
+The `-webkit-text-stroke` property accepted values for the stroke width and color. You could specify the width of the stroke in pixels or other length units and the color using color values.
+
+**SEO:**
+The `-webkit-text-stroke` property and its usage have no direct impact on SEO, as it's primarily a styling property that affects the visual appearance of text content.
+
+**Additional Notes:**
+- `-webkit-text-stroke` is specific to WebKit-based browsers like Safari and is not part of the CSS standard.
+- While this property can be used to create text outlines, it's important to consider the overall design and contrast for optimal readability.
+
+**Browser Support:**
+The `-webkit-text-stroke` property is supported in older versions of WebKit-based browsers like Safari. It's not supported in other modern browsers like Chrome or Firefox. When using this property, consider providing alternative styles for other browsers or using other techniques for broader compatibility.

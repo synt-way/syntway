@@ -1,0 +1,49 @@
+**CSS Masking**
+
+**What:**
+CSS masking allows you to create complex visual effects by controlling which parts of an element are visible or hidden. It involves using images or gradients as masks to define the visibility of an element's content or background.
+
+**Example:**
+Here's an example of using CSS masking with an image to create a circular mask effect:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .masked-element {
+    width: 300px;
+    height: 300px;
+    background-image: url('image.jpg');
+    -webkit-mask-image: url('mask.png');
+    mask-image: url('mask.png');
+  }
+</style>
+</head>
+<body>
+
+<div class="masked-element"></div>
+
+</body>
+</html>
+```
+
+**Why:**
+CSS masking is used to create visually interesting effects that go beyond simple shapes or layouts. It allows you to control which parts of an element are visible, making it useful for creating image overlays, gradients, and other complex visual designs.
+
+**Where:**
+CSS masking is applicable whenever you want to create creative visual effects or control the visibility of an element's content or background.
+
+**How:**
+Use the `mask-image` property (and its prefixed version `-webkit-mask-image` for some browsers) to define a mask for an element. The mask image defines the visibility of the element's content or background.
+
+**SEO:**
+CSS masking itself doesn't have a direct impact on SEO. However, by creating visually engaging and unique designs, you might increase user engagement and indirectly influence SEO.
+
+**Additional Notes:**
+- Use images or gradients as masks to achieve different masking effects.
+- Consider browser compatibility when using `-webkit-mask-image` for webkit-based browsers.
+- Masks can be applied to both content and background using different properties.
+
+**Browser Support:**
+CSS masking is supported by modern browsers, but the level of support might vary for certain properties or masking techniques. Always test your masking effects across different browsers to ensure consistent rendering.

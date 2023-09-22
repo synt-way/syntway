@@ -1,0 +1,49 @@
+The `-moz-orient` property is a non-standard CSS property that was used in older versions of Mozilla Firefox to control the orientation of a box within a flex container. It was part of the Mozilla-specific `-moz` prefix and was never part of the CSS standard. However, as of my last knowledge update in September 2021, this property is deprecated and not recommended for use in modern browsers, including recent versions of Firefox.
+
+Given that this property is obsolete and not widely supported, I'll provide an example and explanation of how it used to work:
+
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .flex-container {
+    display: -moz-box; /* Display as a flex container for older Firefox versions */
+  }
+
+  .flex-item {
+    -moz-orient: vertical; /* Set the box orientation to vertical */
+  }
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item">Item 1</div>
+  <div class="flex-item">Item 2</div>
+</div>
+
+</body>
+</html>
+```
+
+**Why:**
+The `-moz-orient` property was used in Mozilla Firefox to control the orientation of flex items within a flex container. It allowed developers to define whether the flex items should be laid out vertically or horizontally within the container.
+
+**Where:**
+In the context of its historical usage, the `-moz-orient` property could be applied to flex items within a flex container to control their orientation.
+
+**How:**
+The `-moz-orient` property accepted values like `horizontal` and `vertical` to determine the orientation of flex items within the flex container.
+
+**SEO:**
+The `-moz-orient` property and its usage have no direct impact on SEO, as it was a browser-specific and non-standard feature related to layout.
+
+**Additional Notes:**
+- The `-moz-orient` property was specific to Mozilla Firefox and was not part of the CSS standard.
+- Modern browsers, including newer versions of Firefox, no longer support this property.
+- For creating flexible layouts, it's recommended to use standard flexbox properties like `display: flex` and `flex-direction` for controlling the orientation of flex items.
+
+**Browser Support:**
+The `-moz-orient` property was supported only in older versions of Mozilla Firefox. It is no longer supported in modern browsers. If you need to create flexible layouts, consider using standard flexbox properties for better compatibility.

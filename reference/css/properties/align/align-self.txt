@@ -1,0 +1,37 @@
+Certainly! Here's an explanation of the CSS property `align-self`:
+
+**`align-self` Property:**
+
+The `align-self` property in CSS is used within a flex container to control the alignment of an individual flex item along the cross-axis, overriding the alignment set by the `align-items` property on the container.
+
+**Example:**
+```css
+.container {
+  display: flex;
+  align-items: center; /* Align flex items vertically at the center */
+}
+
+.item {
+  align-self: flex-start; /* Align this specific item at the start of the cross-axis */
+}
+```
+
+**Why:**
+The `align-self` property provides the ability to adjust the alignment of a specific flex item within a flex container. This is useful when you want a particular item to deviate from the alignment set for all items by the container's `align-items` property.
+
+**Where:**
+Apply the `align-self` property to individual flex items within a flex container where you want to control the alignment of those specific items along the cross-axis.
+
+**How:**
+Set the value of the `align-self` property to one of the available alignment values, such as `flex-start`, `flex-end`, `center`, `baseline`, and `stretch`.
+
+**SEO:**
+The `align-self` property itself doesn't have a direct impact on SEO. However, using it to fine-tune the alignment of specific items within a layout can contribute to a better user experience.
+
+**Additional Notes:**
+- The `align-self` property overrides the alignment set by the container's `align-items` property for the specific item it's applied to.
+- It's particularly useful when you want one or a few items to have different alignment behavior than the rest.
+- If an item doesn't have an explicit `align-self` value, it will inherit the value of `align-items` from the container.
+
+**Browser Support:**
+The `align-self` property is supported in modern browsers with flexbox support. As with any CSS property, it's a good practice to test your styles across different browsers to ensure consistent rendering.

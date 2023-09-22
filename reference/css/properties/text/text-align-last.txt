@@ -1,0 +1,47 @@
+Certainly! Let's delve into the CSS property `text-align-last` and its various aspects:
+
+**What is `text-align-last`?**
+`text-align-last` is a CSS property used to control the alignment of the last line of a block element or a line of inline-level content when it doesn't fully occupy the available space in its container. It is often used in scenarios where text is justified (`text-align: justify`) and there is extra space on the last line.
+
+**Why is `text-align-last` used?**
+`text-align-last` is used to specify how the last line of text content should be aligned within its container when the text is justified. This property helps improve the visual appearance of justified text by controlling the alignment of the last line, making it look neater and more visually appealing.
+
+**Where is `text-align-last` applied?**
+You can apply the `text-align-last` property to block-level elements like `<p>`, `<div>`, or inline-level elements that contain text, such as `<span>`.
+
+**How to use `text-align-last` with examples:**
+Here are some examples of how to use `text-align-last`:
+
+1. Justify the text and align the last line to the left:
+   ```css
+   .left-align-last {
+     text-align: justify;
+     text-align-last: left;
+   }
+   ```
+
+2. Justify the text and align the last line to the right:
+   ```css
+   .right-align-last {
+     text-align: justify;
+     text-align-last: right;
+   }
+   ```
+
+3. Justify the text and center-align the last line:
+   ```css
+   .center-align-last {
+     text-align: justify;
+     text-align-last: center;
+   }
+   ```
+
+**SEO implications:**
+`text-align-last` has no direct impact on SEO (Search Engine Optimization). SEO primarily involves optimizing content, meta tags, and other factors to improve a website's visibility in search engine results. However, using `text-align-last` can enhance the visual presentation of text, potentially improving user experience, which indirectly affects SEO.
+
+**Additional Notes:**
+- `text-align-last` is most commonly used in conjunction with `text-align: justify`.
+- If the content of a block-level element does not fully justify, the alignment specified by `text-align-last` won't have any effect.
+
+**Browser Support:**
+Browser support for `text-align-last` varies. As of my last knowledge update in September 2021, it was not supported in Internet Explorer but was supported in modern browsers like Chrome, Firefox, Safari, and Edge. However, browser support may have changed since then, so it's important to check the current browser compatibility when using this property in your projects, especially if you need to support older browsers.

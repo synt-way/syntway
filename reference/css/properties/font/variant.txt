@@ -1,0 +1,56 @@
+The `font-variant` CSS property is used to apply variations to the typography of text, such as controlling the use of small capitals, ligatures, and other typographic features. It allows you to control how text is displayed within an element by specifying different variations of the font.
+
+Here's a detailed explanation of the `font-variant` property using the provided template:
+
+### **What is `font-variant`?**
+The `font-variant` property in CSS is used to apply variations to the typography of text within an element. It allows you to control features such as small capitals, ligatures, and numeric figure styles.
+
+### **Usage:**
+The syntax for using the `font-variant` property is as follows:
+
+```css
+selector {
+  font-variant: value;
+}
+```
+
+Where `selector` is the target element, and `value` represents the desired font variations.
+
+### **Example:**
+```css
+p {
+  font-variant: small-caps;
+}
+
+h1 {
+  font-variant: common-ligatures oldstyle-nums;
+}
+```
+
+### **Why Use `font-variant`?**
+The `font-variant` property enables you to modify the typography of text, applying various typographic features to enhance the visual appearance of the content.
+
+### **Where to Use `font-variant`?**
+Use the `font-variant` property on text elements where you want to apply specific typographic variations.
+
+### **How to Use `font-variant`:**
+1. Choose one or more appropriate values for the `font-variant` property.
+2. Apply the `font-variant` property to the desired text elements in your CSS.
+
+### **Example Values:**
+- `normal`: No special font variations are applied.
+- `small-caps`: Converts lowercase letters to smaller uppercase letters (small capitals).
+- `common-ligatures`: Enables common ligatures (e.g., "fi", "fl", "ff").
+- `oldstyle-nums`: Uses old-style numerals for numbers.
+
+### **SEO Considerations:**
+The `font-variant` property itself doesn't have a direct impact on SEO. However, using appropriate font variations can enhance the visual appeal and readability of your content, indirectly contributing to user engagement and SEO.
+
+### **Additional Notes:**
+- **Variation Support**: The availability of specific font variations may vary based on the font used.
+- **Multiple Values**: You can combine multiple values to apply multiple font variations.
+
+### **Browser Support:**
+The `font-variant` property is widely supported in modern browsers.
+
+In summary, the `font-variant` CSS property allows you to apply variations to the typography of text, enhancing its visual appeal through features like small capitals, ligatures, and numeric figure styles. It's a versatile tool for fine-tuning the appearance of your web page's content.

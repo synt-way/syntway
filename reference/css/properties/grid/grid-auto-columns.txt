@@ -1,0 +1,51 @@
+The `grid-auto-columns` CSS property is used within a grid layout to set the default size of columns for grid items that are not explicitly placed using the `grid-template-rows` and `grid-template-columns` properties. It defines the size of columns that are created implicitly when grid items are added to the grid.
+
+Here's a comprehensive explanation of the `grid-auto-columns` property using the provided template:
+
+### **What is `grid-auto-columns`?**
+The `grid-auto-columns` property in CSS is used to set the default size of columns for grid items that are created implicitly within a grid container. It specifies the size that columns will have if not explicitly defined using `grid-template-columns`.
+
+### **Usage:**
+The syntax for using the `grid-auto-columns` property is as follows:
+
+```css
+selector {
+  grid-auto-columns: value;
+}
+```
+
+Where `selector` is the target grid container, and `value` represents the desired default size for implicitly created columns.
+
+### **Example:**
+```css
+.grid-container {
+  display: grid;
+  grid-auto-columns: 100px;
+}
+```
+
+In the example above, columns that are implicitly created within `.grid-container` will have a default size of 100 pixels.
+
+### **Why Use `grid-auto-columns`?**
+The `grid-auto-columns` property allows you to set a consistent default width for columns that are created implicitly, ensuring a predictable layout when items are added dynamically.
+
+### **Where to Use `grid-auto-columns`?**
+Use the `grid-auto-columns` property on a grid container when you want to set the default size for columns that are created automatically.
+
+### **How to Use `grid-auto-columns`:**
+1. Determine the desired default width for implicitly created columns.
+2. Apply the `grid-auto-columns` property to the grid container.
+
+### **Example Values:**
+- `grid-auto-columns: 150px`: Implicitly created columns will have a default width of 150 pixels.
+
+### **SEO Considerations:**
+The `grid-auto-columns` property itself doesn't have a direct impact on SEO. However, creating consistent and well-organized layouts using this property can enhance user experience, which indirectly contributes to SEO.
+
+### **Additional Notes:**
+- **Implicit vs. Explicit Grid**: Explicit grid columns are defined using `grid-template-columns`, while implicit grid columns are created when items exceed the defined columns.
+
+### **Browser Support:**
+The `grid-auto-columns` property is supported in modern browsers that also support CSS Grid Layout.
+
+In summary, the `grid-auto-columns` CSS property is used to set the default size of columns for implicitly created grid items within a grid layout. It's useful for maintaining a consistent layout when items are dynamically added to the grid.

@@ -1,0 +1,49 @@
+The `font-size-adjust` CSS property is used to adjust the font size of text to ensure consistent visual proportions, especially when fallback fonts are used due to unavailable fonts. It helps maintain consistent line heights and spacing when fallback fonts have different x-heights.
+
+Here's a detailed explanation of the `font-size-adjust` property using the provided template:
+
+### **What is `font-size-adjust`?**
+The `font-size-adjust` property in CSS is used to adjust the font size of text to ensure consistent visual proportions, especially when fallback fonts are used due to unavailable fonts. It's particularly helpful in maintaining consistent line heights and spacing when fallback fonts have different x-heights.
+
+### **Usage:**
+The syntax for using the `font-size-adjust` property is as follows:
+
+```css
+selector {
+  font-size-adjust: value;
+}
+```
+
+Where `selector` is the target element, and `value` represents the numeric aspect value.
+
+### **Example:**
+```css
+p {
+  font-size-adjust: 0.5;
+}
+```
+
+### **Why Use `font-size-adjust`?**
+The `font-size-adjust` property helps ensure consistent visual proportions when fallback fonts are used, preventing text from looking too large or small when a different font is used due to unavailability.
+
+### **Where to Use `font-size-adjust`?**
+Use the `font-size-adjust` property on text elements where you want to maintain consistent proportions in cases of font fallback.
+
+### **How to Use `font-size-adjust`:**
+1. Determine the appropriate numeric value based on the x-height of the desired font and its fallback font.
+2. Apply the `font-size-adjust` property to the desired text elements in your CSS.
+
+### **Example Values:**
+- Numeric value: A positive number representing the aspect value.
+
+### **SEO Considerations:**
+The `font-size-adjust` property itself doesn't have a direct impact on SEO. However, maintaining consistent typography can enhance the user experience and readability of your content, indirectly contributing to SEO.
+
+### **Additional Notes:**
+- **Font Matching**: The `font-size-adjust` property helps align the x-height of fallback fonts with that of the primary font.
+- **Aspect Value**: The aspect value is the ratio of the x-height of the font to the x-height of the fallback font.
+
+### **Browser Support:**
+The `font-size-adjust` property is supported in modern browsers, but its support may vary across different browsers.
+
+In summary, the `font-size-adjust` CSS property is used to ensure consistent visual proportions in text by adjusting the font size when fallback fonts are used. It's a useful tool for maintaining a balanced typographic appearance, especially in cases of font unavailability.

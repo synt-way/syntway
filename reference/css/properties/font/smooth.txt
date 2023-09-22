@@ -1,0 +1,39 @@
+The `font-smooth` CSS property was once used to control font rendering on macOS and iOS devices, specifically affecting how fonts were displayed in the browser. However, this property is no longer widely supported in modern browsers, and its functionality has been largely replaced by browser and operating system rendering optimizations.
+
+Here's a brief explanation of the `font-smooth` property:
+
+### **What is `font-smooth`?**
+The `font-smooth` property in CSS was used to control font rendering on macOS and iOS devices, affecting the antialiasing and smoothing of fonts in the browser.
+
+### **Usage:**
+The syntax for using the `font-smooth` property was as follows:
+
+```css
+selector {
+  font-smooth: value;
+}
+```
+
+Where `selector` is the target element, and `value` represents the desired rendering style.
+
+### **Example:**
+```css
+body {
+  font-smooth: always; /* Enable font smoothing */
+}
+```
+
+### **Why Use `font-smooth`?**
+The `font-smooth` property aimed to provide control over font rendering, especially on devices with high-resolution displays like Apple devices.
+
+### **Where to Use `font-smooth`?**
+The `font-smooth` property was used on text elements where you wanted to control font rendering.
+
+### **Additional Notes:**
+- **Deprecated**: The `font-smooth` property is deprecated and no longer widely supported.
+- **Operating System Level**: Modern browsers and operating systems have their own font rendering optimizations, making `font-smooth` less relevant.
+
+### **Browser Support:**
+The `font-smooth` property was primarily supported on macOS and iOS devices. However, its support has been dropped in most modern browsers due to advancements in browser rendering techniques and optimizations.
+
+In summary, the `font-smooth` CSS property was used to control font rendering on macOS and iOS devices. However, it's now deprecated and not widely supported in modern browsers, as browser and operating system optimizations have taken over font rendering improvements.

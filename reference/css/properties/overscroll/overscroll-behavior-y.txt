@@ -1,0 +1,51 @@
+`overscroll-behavior-y` is a CSS property used to control the behavior of an element when the user tries to scroll past its boundaries in the vertical (y-axis) direction. It allows you to specify how scrolling should behave when the user reaches the top or bottom of the content.
+
+Here's an explanation of various aspects related to `overscroll-behavior-y`:
+
+1. **What is `overscroll-behavior-y`**:
+   - `overscroll-behavior-y` is a CSS property used to define the behavior of an element when the user scrolls vertically.
+
+2. **Why Use `overscroll-behavior-y`**:
+   - It's used to control the user experience when scrolling content vertically within an element.
+   - It helps prevent unwanted behaviors like elastic scrolling or bouncing in the vertical direction, which can be frustrating for users.
+   - It provides more control over the scroll behavior of elements, leading to a smoother and more predictable user experience, especially on touch devices.
+
+3. **Where to Apply `overscroll-behavior-y`**:
+   - You can apply it to any HTML element that has scrollable content in the vertical direction, such as a `<div>`, `<section>`, or other containers.
+
+4. **How to Use `overscroll-behavior-y`**:
+   - You can apply it in your CSS stylesheets using the following syntax:
+   
+     ```css
+     element {
+       overscroll-behavior-y: value;
+     }
+     ```
+
+   - Replace `element` with the selector for the HTML element you want to style, and `value` with one of the accepted values explained below.
+
+   - Common values for `overscroll-behavior-y` include:
+     - `auto`: The default behavior. Allows the browser to handle overscrolling as it normally would in the vertical direction.
+     - `contain`: Prevents overscrolling but doesn't prevent vertical scrolling entirely.
+     - `none`: Completely disables overscrolling behavior in the vertical direction.
+
+5. **SEO Implications**:
+   - Similar to `overscroll-behavior-x` and `overscroll-behavior-block`, `overscroll-behavior-y` primarily affects the user experience and doesn't have a direct impact on SEO. It's a visual and interactive property, so it won't directly affect your website's search engine ranking.
+
+6. **Additional Notes**:
+   - You can combine `overscroll-behavior-y` with `overscroll-behavior-x` to control both vertical and horizontal scroll behaviors separately.
+   - The property is supported in modern web browsers, but older browsers may not recognize it. Always check for compatibility and consider providing alternative styling or behavior for unsupported browsers.
+
+7. **Browser Support**:
+   - As of my last knowledge update in September 2021, `overscroll-behavior-y` is supported in modern browsers like Chrome, Firefox, Edge, Safari, and Opera.
+   - Browser support may change over time as new versions are released, so it's essential to check the latest compatibility information on websites like MDN Web Docs or Can I use.
+
+Here's an example of how to use `overscroll-behavior-y` in CSS:
+
+```css
+.scrollable-container {
+  overscroll-behavior-y: contain;
+}
+```
+
+In this example, the `.scrollable-container` element will prevent vertical overscrolling but still allow scrolling within its boundaries without the usual bouncing or elastic effect in the vertical direction.

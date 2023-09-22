@@ -1,0 +1,67 @@
+The `justify-content` CSS property is used to align flex items along the main axis of a flex container. It determines how space is distributed between and around flex items in the main axis. This property is commonly used in Flexbox layouts to control the horizontal alignment of flex items.
+
+Here's a comprehensive explanation of the `justify-content` property using the provided template:
+
+### **What is `justify-content`?**
+The `justify-content` property in CSS is used to align flex items along the main axis of a flex container. It defines how the available space is distributed between and around flex items to achieve the desired horizontal alignment.
+
+### **Usage:**
+The syntax for using the `justify-content` property is as follows:
+
+```css
+.container {
+  display: flex;
+  justify-content: value;
+}
+```
+
+Where `container` is the flex container element, and `value` is one of the available values that determine the alignment of flex items along the main axis.
+
+### **Example:**
+```css
+.container {
+  display: flex;
+  justify-content: center;
+}
+```
+
+In the example above, the flex items inside the `.container` will be horizontally centered along the main axis.
+
+### **Values of `justify-content`:**
+- `flex-start`: Default value. Flex items are packed towards the start of the main axis.
+- `flex-end`: Flex items are packed towards the end of the main axis.
+- `center`: Flex items are centered along the main axis.
+- `space-between`: Flex items are evenly distributed along the main axis, with the first item at the start and the last item at the end.
+- `space-around`: Flex items are evenly distributed along the main axis with equal space on both sides.
+- `space-evenly`: Flex items are evenly distributed along the main axis with equal space between items.
+- `start`: Synonymous with `flex-start`.
+- `end`: Synonymous with `flex-end`.
+- `left`: Synonymous with `flex-start`.
+- `right`: Synonymous with `flex-end`.
+
+### **Why Use `justify-content`?**
+The `justify-content` property is used to control the alignment of flex items along the main axis. It helps achieve various horizontal layouts and spacing within flex containers.
+
+### **Where to Use `justify-content`?**
+Use the `justify-content` property on a flex container element to control how its flex items are aligned horizontally along the main axis.
+
+### **How to Use `justify-content`:**
+1. Determine the desired horizontal alignment for flex items.
+2. Apply the `justify-content` property to the flex container element, specifying the desired value.
+
+### **Example Values:**
+- `justify-content: center;`: Centers flex items along the main axis.
+- `justify-content: space-between;`: Distributes flex items evenly along the main axis, leaving no space at the start or end.
+- `justify-content: flex-end;`: Aligns flex items to the end of the main axis.
+
+### **SEO Considerations:**
+The `justify-content` property doesn't have a direct impact on SEO. It's primarily related to layout and visual presentation.
+
+### **Additional Notes:**
+- The behavior of `justify-content` depends on the flex container's direction (row or column).
+- Combining `justify-content` with other Flexbox properties can create complex layouts.
+
+### **Browser Support:**
+The `justify-content` property is supported in modern browsers.
+
+In summary, the `justify-content` CSS property is used to align flex items along the main axis of a flex container. It's essential for controlling the horizontal alignment of items within Flexbox layouts.

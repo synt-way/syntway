@@ -1,0 +1,3 @@
+As of my last update in September 2021, there is no CSS property called `initial-letter-align`. If this is a new property introduced after that date, I may not have information about it. CSS specifications and features can evolve over time, and new properties may be added to the language.
+
+If `initial-letter-align` is indeed a new CSS property, I recommend checking the latest CSS documentation or resources to learn more about its purpose, usage, and browser support. You can refer to official CSS specifications or developer resources like MDN Web Docs to get up-to-date information on any new properties introduced after September 2021.

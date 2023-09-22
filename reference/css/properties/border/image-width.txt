@@ -1,0 +1,45 @@
+Certainly, I'd be happy to explain the `border-image-width` property:
+
+**What is `border-image-width`?**
+`border-image-width` is a CSS property used to define the width of the border image slices that are created by the `border-image-source` property. It specifies the width of the slices along the four sides of the element's border.
+
+**Why is `border-image-width` used?**
+When you're creating a border using an image with the `border-image-source` property, the `border-image-width` property allows you to control how wide the border slices should be. This is important because it affects how the border image is repeated and displayed.
+
+**How to use `border-image-width`?**
+The syntax for using the `border-image-width` property is as follows:
+
+```css
+element {
+  border-image-width: value;
+}
+```
+
+Here, replace `value` with the desired width. You can use a single value for all sides or specify values for each side individually.
+
+Example with the same value for all sides:
+
+```css
+/* Apply a uniform border image width to an element */
+.element {
+  border-image-width: 10px;
+}
+```
+
+Example with individual values for each side:
+
+```css
+/* Apply different border image widths to each side of an element */
+.element {
+  border-image-width: 10px 20px 15px 5px; /* top right bottom left */
+}
+```
+
+**Additional Notes:**
+- The `border-image-width` property is often used in combination with other border-related properties like `border-image-source`, `border-image-slice`, and `border-image-repeat`.
+- The width you set here determines how much of the border image will be displayed on each side of the element.
+
+**Browser Support:**
+As of my last update in September 2021, `border-image-width` is well-supported in modern browsers. However, it's always a good idea to check for the most up-to-date browser compatibility information on websites like MDN Web Docs or Can I use.
+
+For further details and examples, you can refer to the official MDN documentation on `border-image-width`: [MDN - border-image-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-width).

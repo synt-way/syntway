@@ -1,0 +1,53 @@
+**CSS Shapes**
+
+**What:**
+CSS Shapes refer to the ability to define non-rectangular shapes for elements, allowing content to flow around or within those shapes. This feature is commonly used to create visually appealing designs, text wraps, and unique layout effects.
+
+**Example:**
+Here's an example of using CSS Shapes to wrap text around a circular shape:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .circle {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    shape-outside: circle();
+    float: left;
+    margin: 20px 20px 20px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="circle"></div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet finibus odio.</p>
+
+</body>
+</html>
+```
+
+**Why:**
+CSS Shapes allow you to create unique layouts and designs that go beyond traditional rectangular elements. They can enhance visual appeal and create more engaging and dynamic content.
+
+**Where:**
+CSS Shapes are applicable whenever you want to:
+- Wrap text around images or elements of different shapes.
+- Create custom layouts with non-rectangular elements.
+- Enhance the design and aesthetics of your website.
+
+**How:**
+Use the `shape-outside` property to define the shape, and use functions like `circle()`, `ellipse()`, `polygon()`, and `inset()` to specify the shape's dimensions.
+
+**SEO:**
+CSS Shapes themselves don't have a direct impact on SEO. However, they can contribute to a better user experience by enhancing the visual appeal of your content, which might indirectly influence user engagement and SEO.
+
+**Additional Notes:**
+- Not all browsers support all shape functions or might have slightly different behavior.
+- Be aware that CSS Shapes can sometimes affect the layout, especially in responsive designs.
+
+**Browser Support:**
+CSS Shapes are supported by modern browsers, but the level of support might vary for specific shape functions. Always test your shapes across different browsers to ensure consistent rendering.

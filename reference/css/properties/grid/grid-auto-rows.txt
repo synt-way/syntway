@@ -1,0 +1,51 @@
+The `grid-auto-rows` CSS property is used within a grid layout to set the default size for rows that are implicitly created when grid items are added to the grid and placed in rows that are not explicitly defined using the `grid-template-rows` property. It specifies the height of rows that are created implicitly.
+
+Here's a comprehensive explanation of the `grid-auto-rows` property using the provided template:
+
+### **What is `grid-auto-rows`?**
+The `grid-auto-rows` property in CSS is used to set the default height for rows that are created implicitly within a grid container. It specifies the height that rows will have if not explicitly defined using `grid-template-rows`.
+
+### **Usage:**
+The syntax for using the `grid-auto-rows` property is as follows:
+
+```css
+selector {
+  grid-auto-rows: value;
+}
+```
+
+Where `selector` is the target grid container, and `value` represents the desired default height for implicitly created rows.
+
+### **Example:**
+```css
+.grid-container {
+  display: grid;
+  grid-auto-rows: 150px;
+}
+```
+
+In the example above, rows that are implicitly created within `.grid-container` will have a default height of 150 pixels.
+
+### **Why Use `grid-auto-rows`?**
+The `grid-auto-rows` property allows you to set a consistent default height for rows that are created automatically, ensuring a predictable layout when items are added dynamically.
+
+### **Where to Use `grid-auto-rows`?**
+Use the `grid-auto-rows` property on a grid container when you want to set the default height for rows that are created implicitly.
+
+### **How to Use `grid-auto-rows`:**
+1. Determine the desired default height for implicitly created rows.
+2. Apply the `grid-auto-rows` property to the grid container.
+
+### **Example Values:**
+- `grid-auto-rows: 200px`: Implicitly created rows will have a default height of 200 pixels.
+
+### **SEO Considerations:**
+The `grid-auto-rows` property itself doesn't have a direct impact on SEO. However, creating consistent and well-organized layouts using this property can enhance user experience, indirectly contributing to SEO.
+
+### **Additional Notes:**
+- **Implicit vs. Explicit Grid**: Explicit grid rows are defined using `grid-template-rows`, while implicit grid rows are created when items exceed the defined rows.
+
+### **Browser Support:**
+The `grid-auto-rows` property is supported in modern browsers that also support CSS Grid Layout.
+
+In summary, the `grid-auto-rows` CSS property is used to set the default height of rows for implicitly created grid items within a grid layout. It's useful for maintaining a consistent layout when items are dynamically added to the grid.

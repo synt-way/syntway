@@ -1,0 +1,32 @@
+The `border-block-start` property in CSS is used to set the width, style, and color of the block-level border on the start side of an element. The "start" side is determined by the writing mode of the content, which is typically the left side in a left-to-right writing mode or the right side in a right-to-left writing mode.
+
+**Example:**
+```css
+.container {
+  border-block-start: 1px solid #999; /* Set a solid border on the start side (left side in LTR) */
+}
+```
+
+**Why:**
+The `border-block-start` property is used to style the vertical border on the "start" side of an element. It's particularly useful when you want to apply specific border styling to the appropriate side based on the writing mode of the content.
+
+**Where:**
+Apply the `border-block-start` property to block-level elements where you want to set the styling for the vertical border on the start side (left side in LTR, right side in RTL).
+
+**How:**
+The `border-block-start` property has three parts that can be specified in any order:
+1. Border width: Defines the width of the border in pixels, ems, rems, percentages, etc.
+2. Border style: Specifies the style of the border (e.g., solid, dashed, dotted, etc.).
+3. Border color: Sets the color of the border.
+
+You can use any combination of these parts to define the appearance of the border on the start side.
+
+**SEO:**
+The `border-block-start` property itself doesn't have a direct impact on SEO. However, using it to visually enhance the layout based on the writing mode can contribute to a better user experience.
+
+**Additional Notes:**
+- To set different styles, widths, and colors for the individual sides of the block-level element's border, you can use properties like `border-block-start`, `border-block-end`, `border-inline-start`, and `border-inline-end`.
+- The `border-block-start` property is part of the Logical Properties and Values specification, which provides better support for languages that use vertical writing modes.
+
+**Browser Support:**
+The `border-block-start` property is supported in modern browsers that have implemented the Logical Properties and Values specification. This includes browsers like Chrome, Firefox, Safari, and Edge. Keep in mind that support might be limited in older versions of some browsers.

@@ -1,0 +1,44 @@
+The `-webkit-border-before` property was a non-standard CSS property used in older versions of the WebKit-based browsers (such as Safari and Chrome) to set the styles for the "before" pseudo-element (`::before`) of an element. This property allowed you to apply specific border styles to the before pseudo-element of an element. However, as of my last knowledge update in September 2021, this property is deprecated and not recommended for use in modern browsers, including recent versions of Safari and Chrome.
+
+Given that this property is obsolete and not widely supported, I'll provide an example and explanation of how it used to work:
+
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .custom-icon::before {
+    content: "►";
+    display: inline-block;
+    -webkit-border-before: 2px solid red; /* Set border style for before pseudo-element */
+  }
+</style>
+</head>
+<body>
+
+<p class="custom-icon">This paragraph has a custom before pseudo-element.</p>
+
+</body>
+</html>
+```
+
+**Why:**
+The `-webkit-border-before` property was used to set the border styles for the before pseudo-element of an element. It allowed developers to create custom design elements using CSS.
+
+**Where:**
+In the context of its historical usage, the `-webkit-border-before` property could be applied to elements with the `::before` pseudo-element to style a custom "before" element, such as custom icons or decorative elements.
+
+**How:**
+The `-webkit-border-before` property allowed you to set border styles like `border-width`, `border-color`, and `border-style` for the before pseudo-element.
+
+**SEO:**
+The `-webkit-border-before` property and its usage have no direct impact on SEO, as it was a browser-specific and non-standard feature related to styling.
+
+**Additional Notes:**
+- The `-webkit-border-before` property was specific to WebKit-based browsers (e.g., Safari and Chrome) and was not part of the CSS standard.
+- Modern browsers, including newer versions of Safari and Chrome, no longer support this property.
+- For styling pseudo-elements, consider using standard properties like `border`, `border-width`, `border-color`, and `border-style`.
+
+**Browser Support:**
+The `-webkit-border-before` property was supported only in older versions of WebKit-based browsers. It is no longer supported in modern browsers. Always prioritize using standard CSS properties for styling to ensure compatibility across different browsers.

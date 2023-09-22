@@ -1,0 +1,57 @@
+The `font-weight` CSS property is used to specify the weight or thickness of the characters in a font. It controls how bold or light the text appears. The `font-weight` property is commonly used to adjust the visual weight of text elements for better typographic hierarchy and emphasis.
+
+Here's a comprehensive explanation of the `font-weight` property using the provided template:
+
+### **What is `font-weight`?**
+The `font-weight` property in CSS is used to define the weight or thickness of characters in a font. It determines the visual appearance of text elements, ranging from thin and light to bold and heavy.
+
+### **Usage:**
+The syntax for using the `font-weight` property is as follows:
+
+```css
+selector {
+  font-weight: value;
+}
+```
+
+Where `selector` is the target element, and `value` represents the desired font weight.
+
+### **Example:**
+```css
+p {
+  font-weight: normal;
+}
+
+h1 {
+  font-weight: bold;
+}
+```
+
+### **Why Use `font-weight`?**
+The `font-weight` property allows you to control the visual weight of text, making it easier to establish typographic hierarchy and emphasize certain content.
+
+### **Where to Use `font-weight`?**
+Use the `font-weight` property on text elements where you want to adjust the thickness or boldness of the characters.
+
+### **How to Use `font-weight`:**
+1. Choose an appropriate value for the font weight (`normal`, `bold`, `lighter`, `bolder`, numeric values, etc.).
+2. Apply the `font-weight` property to the desired text elements in your CSS.
+
+### **Example Values:**
+- `normal`: Normal or regular weight.
+- `bold`: Bold weight.
+- `lighter`: A lighter weight relative to the parent element's weight.
+- `bolder`: A bolder weight relative to the parent element's weight.
+- Numeric values: Numeric values like `100`, `200`, `300`, ..., `900` representing different weights.
+
+### **SEO Considerations:**
+The `font-weight` property can indirectly impact SEO by improving readability and emphasizing important content. However, its impact is primarily related to user experience and engagement.
+
+### **Additional Notes:**
+- **Font Variation Support**: The availability of different font weights depends on the font being used.
+- **Numeric Values**: Not all fonts support the full range of numeric values. Some fonts might have limited available weights.
+
+### **Browser Support:**
+The `font-weight` property is widely supported in all modern browsers.
+
+In summary, the `font-weight` CSS property is essential for controlling the weight or thickness of characters in a font. It's a fundamental tool for adjusting the visual appearance of text and ensuring proper typographic hierarchy on your web page.

@@ -1,0 +1,29 @@
+The `aspect-ratio` property in CSS is used to control the aspect ratio of an element. It allows you to specify the desired width-to-height ratio, ensuring that the element maintains that ratio even when its dimensions change due to various factors like viewport size or content.
+
+**Example:**
+```css
+.square {
+  aspect-ratio: 1/1; /* Maintain a 1:1 aspect ratio */
+  background-color: #007bff;
+}
+```
+
+**Why:**
+The `aspect-ratio` property is used to ensure that an element maintains a specific width-to-height ratio, which is particularly useful for responsive design. It helps maintain consistent visual proportions across different screen sizes or device orientations.
+
+**Where:**
+Apply the `aspect-ratio` property to elements that you want to maintain a specific aspect ratio, such as images, videos, or containers for responsive design.
+
+**How:**
+The `aspect-ratio` property accepts values in the form of fractions (e.g., `16/9` for a 16:9 aspect ratio). You can use integers, decimals, and even variables for the numerator and denominator of the ratio.
+
+**SEO:**
+The `aspect-ratio` property itself doesn't have a direct impact on SEO. However, using it to maintain consistent visual proportions can contribute to a better user experience, which indirectly affects factors like user engagement and session duration.
+
+**Additional Notes:**
+- The `aspect-ratio` property is useful for avoiding distorted images or videos when responsive layouts change the dimensions of elements.
+- It can be used alongside other layout techniques like Flexbox or Grid to create complex responsive designs.
+- Browser support for the `aspect-ratio` property is relatively new, and it might not be supported in all older browsers. Be sure to test its behavior across different browsers.
+
+**Browser Support:**
+As of my last knowledge update in September 2021, the `aspect-ratio` property is a relatively new feature and might not be fully supported in all browsers. Support is expected to grow over time, but make sure to check the latest browser compatibility information to ensure consistent behavior.

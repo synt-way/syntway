@@ -1,0 +1,60 @@
+The `mask-border-slice` CSS property is used to control the sizing and placement of a mask border image when using the `mask-border` property. It defines how the mask border image is sliced and positioned along the element's border.
+
+Here's a comprehensive explanation of the `mask-border-slice` property using the provided template:
+
+### **What is `mask-border-slice`?**
+The `mask-border-slice` property in CSS is used to specify how a mask border image is sliced and positioned along the element's border when using the `mask-border` property. It determines the sizing and placement of the mask border image.
+
+### **Usage:**
+The syntax for using the `mask-border-slice` property is as follows:
+
+```css
+selector {
+  mask-border-slice: values;
+}
+```
+
+Where `selector` is the target element, and `values` represent one to four length values that define the slicing of the mask border image.
+
+### **Example:**
+```css
+.element {
+  mask-border: url('mask-image.png') 10 fill;
+  mask-border-slice: 10% 20% 30% 40%;
+}
+```
+
+In the example above, the `.element` will have a mask border applied from the `mask-image.png` with a 10px slice, and the mask border image will be sliced using the specified percentages for each side.
+
+### **Values of `mask-border-slice`:**
+The `mask-border-slice` property can take up to four length values, representing the sizing and placement of the mask border image on each side (top, right, bottom, left). These values can be expressed as lengths, percentages, or the `fill` keyword.
+
+- `fill`: The mask border image is scaled to fill the entire border.
+- Length values: Define a specific size for the corresponding side of the border.
+- Percentage values: Define a percentage of the image size for the corresponding side.
+
+### **Why Use `mask-border-slice`?**
+The `mask-border-slice` property allows you to control the sizing and positioning of a mask border image, which is useful for creating custom border effects and designs.
+
+### **Where to Use `mask-border-slice`?**
+Use the `mask-border-slice` property in conjunction with the `mask-border` property on elements where you want to apply a mask border image and control its sizing and placement.
+
+### **How to Use `mask-border-slice`:**
+1. Determine the desired sizing and placement of the mask border image on each side.
+2. Apply the `mask-border-slice` property to the element, specifying the desired values.
+
+### **Example Values:**
+- `mask-border-slice: 10% 20% 30% 40%;`: Slices the mask border image with specified percentages for each side.
+- `mask-border-slice: 20px fill;`: Slices the mask border image with a 20px slice on all sides and scales it to fill the border.
+
+### **SEO Considerations:**
+The `mask-border-slice` property itself doesn't have a direct impact on SEO. It's primarily used for styling and visual effects.
+
+### **Additional Notes:**
+- The `mask-border-slice` property is used in combination with the `mask-border` property.
+- The values of `mask-border-slice` can be different for each side.
+
+### **Browser Support:**
+The `mask-border-slice` property is supported in modern browsers. As with any CSS property, it's recommended to check compatibility and test the desired effects in different browsers.
+
+Please note that browser support and specific syntax details may have evolved after my last knowledge update in September 2021. Always refer to up-to-date documentation and resources for the latest information on CSS properties.

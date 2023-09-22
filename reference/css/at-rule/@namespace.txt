@@ -1,0 +1,46 @@
+The `@namespace` at-rule in CSS is used to define XML namespaces within a CSS stylesheet. It's primarily used when working with XML-based languages like SVG (Scalable Vector Graphics) or MathML (Mathematical Markup Language) to specify the XML namespaces associated with elements or attributes in the document.
+
+Here's a detailed explanation of `@namespace`:
+
+**Syntax:**
+The `@namespace` rule is used to define XML namespaces in CSS:
+
+```css
+@namespace prefix url("namespace-uri");
+```
+
+- `prefix`: Specifies a prefix for the XML namespace.
+- `url("namespace-uri")`: Specifies the URL of the XML namespace.
+
+**Example:**
+Let's consider an example where you have an SVG document embedded within an HTML page. To target elements from the SVG namespace in your CSS, you can use the `@namespace` rule like this:
+
+```css
+@namespace svg url("http://www.w3.org/2000/svg");
+
+svg {
+  fill: red; /* Apply styles to SVG elements */
+}
+```
+
+In this example, we define an XML namespace with the prefix "svg" and associate it with the URL for the SVG namespace. We can then apply styles to SVG elements using the "svg" selector.
+
+**Why Use `@namespace` Rule:**
+The `@namespace` rule is used when working with XML-based languages to associate a prefix with a specific XML namespace. This is necessary to target and style elements or attributes from that namespace within CSS.
+
+**Where to Use `@namespace` Rule:**
+You should use the `@namespace` rule within a CSS stylesheet when working with XML-based languages like SVG or MathML. It helps establish a connection between CSS and the XML namespaces used in the document.
+
+**How `@namespace` Rule Works:**
+When an `@namespace` rule is defined, it associates a prefix with a particular XML namespace. This prefix can then be used to target elements or attributes from that namespace within the CSS stylesheet.
+
+**SEO (Search Engine Optimization) Considerations:**
+The use of the `@namespace` rule in CSS typically doesn't have a direct impact on SEO. SEO primarily focuses on content, structure, and metadata to improve a website's search engine ranking. However, using XML-based languages like SVG with appropriate namespaces can improve the rendering of graphics or mathematical equations, potentially benefiting the user experience.
+
+**Additional Notes:**
+- The `@namespace` rule is most commonly used when styling SVG or MathML content within HTML documents.
+- XML namespaces help avoid naming conflicts when different XML-based languages are used together in a single document.
+- While SVG is commonly used with `@namespace` in CSS, modern SVG documents can also be styled using regular CSS without the need for namespace declarations.
+
+**Browser Support:**
+Support for the `@namespace` rule in CSS is generally good in modern web browsers, especially when working with SVG. However, the use of XML namespaces in CSS is less common in web development compared to traditional HTML and CSS. Always consider the specific requirements of your project and the browsers you need to support when using `@namespace`.

@@ -1,0 +1,55 @@
+**CSS Cascading Variables (Custom Properties)**
+
+**What:**
+CSS cascading variables, also known as custom properties, allow you to define reusable values and use them throughout your stylesheet. They enhance flexibility, modularity, and maintainability in your styles by providing a way to store and manage values in a central location.
+
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  :root {
+    --main-color: #3498db;
+  }
+
+  .box {
+    width: 200px;
+    height: 100px;
+    background-color: var(--main-color);
+  }
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
+
+**Why:**
+Cascading variables make it easier to maintain a consistent design across your website. They allow you to change values in one place (the root element) and have those changes automatically reflected wherever the variable is used.
+
+**Where:**
+Cascading variables are beneficial for various scenarios, including:
+- Consistent color schemes
+- Responsive design breakpoints
+- Typography settings
+- Repeatedly used values (e.g., padding, margin)
+
+**How:**
+- Declare variables using the `--` prefix within a scope (usually `:root` or a specific element).
+- Access variables using the `var()` function, passing the variable name as an argument.
+
+**SEO:**
+Cascading variables themselves don't impact SEO, but they can contribute to a better user experience by helping maintain a cohesive and organized design. A well-designed website can lead to increased user engagement and indirectly affect SEO.
+
+**Additional Notes:**
+- Variables can be defined within different scopes, allowing you to tailor them to specific sections of your website.
+- Variables are resolved at runtime, so changes to their values are dynamically reflected.
+- Variables can also be combined with JavaScript to create dynamic themes or to update styles based on user interactions.
+- They are especially useful in large and complex stylesheets to manage and update values efficiently.
+
+**Browser Support:**
+Cascading variables (custom properties) are widely supported by modern browsers, including Chrome, Firefox, Safari, Edge, and others. However, older versions of some browsers might have limited support or slightly different behaviors for custom properties. Always consider testing across different browsers to ensure consistent behavior.

@@ -1,0 +1,60 @@
+The `mask-position` CSS property is used to set the initial position of a mask image or gradient applied to an element using the `mask` property. It determines where the mask is initially placed within the element, allowing you to control its alignment and positioning.
+
+Here's a comprehensive explanation of the `mask-position` property using the provided template:
+
+### **What is `mask-position`?**
+The `mask-position` property in CSS is used to define the initial position of a mask image or gradient when using the `mask` property. It specifies where the mask is initially placed within the element.
+
+### **Usage:**
+The syntax for using the `mask-position` property is as follows:
+
+```css
+selector {
+  mask-position: value;
+}
+```
+
+Where `selector` is the target element, and `value` represents one or two values indicating the initial position of the mask along the horizontal and vertical axes.
+
+### **Example:**
+```css
+.element {
+  background-color: blue;
+  mask: url('mask-image.png');
+  mask-position: center;
+}
+```
+
+In the example above, the `.element` will have a blue background, and the mask from `mask-image.png` will be initially positioned at the center of the element.
+
+### **Values of `mask-position`:**
+- Length values: Specifies the horizontal and/or vertical position using length values (e.g., `20px`, `50%`).
+- Keywords: Keywords like `top`, `right`, `bottom`, and `left` can be used to position the mask along the respective edge.
+- Keyword pairs: Keyword pairs like `center center` or `left top` can be used to specify both horizontal and vertical positions.
+
+### **Why Use `mask-position`?**
+The `mask-position` property allows you to control the initial alignment and placement of a mask image or gradient within the element. This can be useful for precisely positioning the mask where you want it.
+
+### **Where to Use `mask-position`?**
+Use the `mask-position` property on elements where you've applied a mask using the `mask` property and want to define the initial position of the mask.
+
+### **How to Use `mask-position`:**
+1. Determine the desired initial position for the mask image or gradient.
+2. Apply the `mask-position` property to the element, specifying the chosen value.
+
+### **Example Values:**
+- `mask-position: 10px 20px;`: Sets the mask's initial position 10 pixels from the left and 20 pixels from the top.
+- `mask-position: center center;`: Positions the mask image or gradient at the center of the element.
+- `mask-position: right bottom;`: Positions the mask at the bottom-right corner of the element.
+
+### **SEO Considerations:**
+The `mask-position` property itself doesn't have a direct impact on SEO. It's primarily used for styling and visual effects.
+
+### **Additional Notes:**
+- The `mask-position` property works in conjunction with the `mask` property.
+- The mask's final position might be affected by other properties like `mask-repeat` and `mask-origin`.
+
+### **Browser Support:**
+The `mask-position` property is supported in modern browsers. Always test in different browsers to ensure consistent behavior.
+
+Please note that browser support and specific syntax details may have evolved after my last knowledge update in September 2021. Always refer to up-to-date documentation and resources for the latest information on CSS properties.

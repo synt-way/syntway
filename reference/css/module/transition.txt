@@ -1,0 +1,58 @@
+**CSS Transitions**
+
+**What:**
+CSS Transitions allow you to smoothly animate changes in CSS properties over a specified duration. They provide a way to create subtle and engaging animations without requiring complex JavaScript code.
+
+**Example:**
+Here's an example of using CSS Transitions to create a smooth color change on hover:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: green;
+  }
+</style>
+</head>
+<body>
+
+<button class="button">Hover me</button>
+
+</body>
+</html>
+```
+
+**Why:**
+CSS Transitions are used to:
+- Add subtle animations to enhance user experience.
+- Provide visual feedback on interactive elements (like buttons).
+- Improve the overall aesthetics and engagement of a website.
+
+**Where:**
+CSS Transitions can be applied wherever you want to create smooth animations between different states, such as:
+- Hover effects on buttons, links, or images.
+- Expanding and collapsing sections.
+- Fading in or out elements.
+
+**How:**
+Use the `transition` property to specify the CSS properties that should be animated, the duration of the animation, and the easing function.
+
+**SEO:**
+CSS Transitions themselves don't have a direct impact on SEO. However, they can contribute to a better user experience and engagement, which might indirectly influence SEO metrics.
+
+**Additional Notes:**
+- Use appropriate easing functions to control the animation's acceleration and deceleration.
+- Avoid excessive or overly flashy animations that could negatively impact user experience.
+- CSS Transitions can work in conjunction with other CSS features like hover effects and animations.
+
+**Browser Support:**
+CSS Transitions are supported by modern browsers. However, browser support for specific properties and effects might vary. Always test your transitions across different browsers to ensure consistent behavior.

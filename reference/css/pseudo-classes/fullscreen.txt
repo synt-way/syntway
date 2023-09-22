@@ -1,0 +1,51 @@
+The `:fullscreen` pseudo-class in CSS is used to select and style an element when it is displayed in full-screen mode, typically triggered by user interaction or JavaScript. It allows you to apply styles specifically when an element takes up the entire screen, enhancing user experience for full-screen content such as videos, images, or modal dialogs.
+
+**Syntax:**
+```css
+:fullscreen {
+    /* CSS rules for the element in full-screen mode */
+}
+```
+
+Here's a breakdown of the `:fullscreen` pseudo-class:
+
+1. **What is the `:fullscreen` Pseudo-Class in CSS?**
+   - The `:fullscreen` pseudo-class selects and styles an element when it is displayed in full-screen mode. It is often used to customize the appearance of elements that occupy the entire screen, improving the user experience for full-screen content.
+
+2. **Why Use the `:fullscreen` Pseudo-Class?**
+   - You use the `:fullscreen` pseudo-class to provide customized styles for elements in full-screen mode, making the user experience more visually appealing and enhancing the display of content.
+
+3. **Where Can You Use the `:fullscreen` Pseudo-Class?**
+   - You can use it in your CSS stylesheets to target and style elements that enter full-screen mode, such as videos, images, galleries, or modal dialogs.
+
+4. **How to Use the `:fullscreen` Pseudo-Class?**
+   - To use it, simply use `:fullscreen` without any selector preceding it. Define the CSS rules inside the curly braces `{}` that follow. These rules will apply when the element is in full-screen mode.
+
+   ```css
+   :fullscreen {
+       background-color: black; /* Set a black background when in full-screen mode */
+       color: white; /* Set white text color when in full-screen mode */
+   }
+   ```
+
+5. **SEO Considerations:**
+   - The `:fullscreen` pseudo-class itself does not have a direct impact on SEO. SEO primarily focuses on the content and structure of HTML documents, rather than the styling applied to elements.
+
+6. **Additional Notes:**
+   - The `:fullscreen` pseudo-class is often used in conjunction with JavaScript to create custom full-screen experiences, such as video players or modal dialogs.
+   - Browser support for the `:fullscreen` pseudo-class has improved, but it may not be fully supported in all browsers or may require specific JavaScript APIs to trigger full-screen mode.
+
+7. **Browser Support:**
+   - Browser support for the `:fullscreen` pseudo-class has improved over time. It is widely supported in modern web browsers, including Chrome, Firefox, Safari, and Edge. However, its use may depend on the specific HTML and JavaScript implementation for full-screen mode.
+
+Here's a simplified example of how you might use the `:fullscreen` pseudo-class in a CSS stylesheet to set a black background and white text color for an element when it enters full-screen mode:
+
+```css
+/* Customize styles for the element in full-screen mode */
+:fullscreen {
+    background-color: black;
+    color: white;
+}
+```
+
+In this example, when the specified element enters full-screen mode, it will have a black background and white text color to enhance the full-screen viewing experience.

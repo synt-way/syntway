@@ -1,0 +1,42 @@
+The `-moz-user-input` property was a non-standard CSS property that was used in older versions of Mozilla Firefox to control whether a user could interact with an element using mouse events, keyboard events, or other forms of input. It was part of the Mozilla-specific `-moz` prefix and was never part of the CSS standard. However, as of my last knowledge update in September 2021, this property is deprecated and not recommended for use in modern browsers, including recent versions of Firefox.
+
+Given that this property is obsolete and not widely supported, I'll provide an example and explanation of how it used to work:
+
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .no-input-element {
+    -moz-user-input: disabled; /* Disable user input for the element */
+  }
+</style>
+</head>
+<body>
+
+<div class="no-input-element">This element does not respond to user input</div>
+
+</body>
+</html>
+```
+
+**Why:**
+The `-moz-user-input` property was used in Mozilla Firefox to control whether an element could respond to user input events, such as mouse clicks, keyboard interactions, and other input methods.
+
+**Where:**
+In the context of its historical usage, the `-moz-user-input` property could be applied to elements to prevent them from responding to user input.
+
+**How:**
+The `-moz-user-input` property accepted values like `none`, `disabled`, and `enabled` to control whether the element could respond to user input.
+
+**SEO:**
+The `-moz-user-input` property and its usage have no direct impact on SEO, as it was a browser-specific and non-standard feature related to user interactions.
+
+**Additional Notes:**
+- The `-moz-user-input` property was specific to Mozilla Firefox and was not part of the CSS standard.
+- Modern browsers, including newer versions of Firefox, no longer support this property.
+- For controlling user interactions, it's recommended to use standard HTML attributes like `disabled`, `readonly`, and JavaScript event handlers.
+
+**Browser Support:**
+The `-moz-user-input` property was supported only in older versions of Mozilla Firefox. It is no longer supported in modern browsers. Always prioritize using standard practices for controlling user interactions to ensure compatibility across different browsers.

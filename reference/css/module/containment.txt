@@ -1,0 +1,57 @@
+**CSS Containment**
+
+**What:**
+CSS containment is a feature that allows you to define the scope of an element's layout and rendering. It helps browsers optimize performance by indicating which elements can be treated as independent units, potentially leading to faster rendering and improved performance.
+
+**Example:**
+Here's an example of using the `contain` property to indicate that an element should be isolated from its siblings for layout and rendering optimization:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container {
+    contain: layout;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box"></div>
+</div>
+
+<div class="box"></div>
+
+</body>
+</html>
+```
+
+**Why:**
+CSS containment is used to improve rendering performance by allowing the browser to optimize the layout and rendering of certain elements independently. This can lead to faster load times and smoother interactions, especially in complex layouts.
+
+**Where:**
+CSS containment is applicable in situations where you want to indicate that an element's layout or rendering should be isolated, such as:
+- Complex UI components (e.g., grids, sliders) where performance optimization is crucial.
+- Nested components that don't need to interact with the rest of the layout.
+
+**How:**
+Use the `contain` property to indicate how an element should be contained. Common values include `none` (default), `strict`, and `layout`.
+
+**SEO:**
+CSS containment primarily impacts performance and rendering optimization rather than directly influencing SEO. However, improved performance can contribute to a positive user experience, potentially affecting user engagement and indirectly impacting SEO.
+
+**Additional Notes:**
+- Be cautious when applying containment to avoid over-optimization or unnecessary complexity.
+- CSS containment is a newer feature, and its effects might vary across different browsers and situations.
+- Test the effects of containment in various scenarios to determine its impact on performance.
+
+**Browser Support:**
+CSS containment is a relatively new feature and might not be fully supported in all browsers. Its behavior might vary between browsers. It's recommended to check browser compatibility and perform thorough testing to ensure the desired effects are achieved.

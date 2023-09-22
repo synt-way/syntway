@@ -1,0 +1,3 @@
+/* import card.css file */
+@import url('./bundle/card.css');
+@import url('../home/bundle/about.css');

@@ -1,0 +1,32 @@
+The `animation-duration` property in CSS is used to specify the duration of an animation. It determines how long an animation takes to complete one cycle, from the starting state to the ending state. This property is an essential part of creating smooth and visually pleasing animations on web pages.
+
+**Example:**
+```css
+.slide {
+  animation: slide 2s ease-in-out infinite; /* Animation with a duration of 2 seconds */
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+```
+
+**Why:**
+The `animation-duration` property is used to control the speed and pace of animations. It's essential for achieving the desired visual effect and timing in animations.
+
+**Where:**
+Apply the `animation-duration` property to the element you're animating to specify how long the animation cycle should take.
+
+**How:**
+The `animation-duration` property accepts a time value (in seconds or milliseconds) that determines the length of time it takes for an animation to complete one cycle.
+
+**SEO:**
+The `animation-duration` property and animations themselves don't have a direct impact on SEO. However, animations can enhance user experience and engagement, which might indirectly contribute to longer page visits.
+
+**Additional Notes:**
+- You can combine `animation-duration` with other animation properties like `animation-name`, `animation-timing-function`, and `animation-delay` to create more complex animations.
+- Longer animation durations can give users more time to perceive and understand the animation effects.
+
+**Browser Support:**
+The `animation-duration` property is supported in modern browsers, including Chrome, Firefox, Safari, and Edge. It is widely supported and provides consistent behavior across these browsers.

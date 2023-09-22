@@ -1,0 +1,28 @@
+The `background-position-y` property in CSS is used to set the vertical position of a background image within an element. It determines where the top edge of the background image is placed relative to the element's padding box or content box.
+
+**Example:**
+```css
+.banner {
+  background-image: url('background.jpg');
+  background-position-y: center; /* Position the background image at the center vertically */
+}
+```
+
+**Why:**
+The `background-position-y` property is used to control the vertical placement of a background image within an element. It's especially useful when you want to manipulate only the vertical position of the background image.
+
+**Where:**
+Apply the `background-position-y` property to elements where you want to control the vertical position of the background image, especially when you want to position the image precisely.
+
+**How:**
+The `background-position-y` property accepts values that determine the vertical position of the background image. You can use keywords like `top`, `center`, and `bottom`, or length values like `10px`.
+
+**SEO:**
+The `background-position-y` property itself doesn't have a direct impact on SEO. It's mainly used for visual styling and layout purposes.
+
+**Additional Notes:**
+- The `background-position-y` property is particularly useful when you want to adjust only the vertical position of the background image while keeping the horizontal position unchanged.
+- If you need to control both horizontal and vertical positions, you can use the `background-position` property.
+
+**Browser Support:**
+The `background-position-y` property is supported in modern browsers, including Chrome, Firefox, Safari, and Edge. It provides consistent behavior across these browsers.

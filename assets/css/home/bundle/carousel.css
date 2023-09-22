@@ -1,0 +1,16 @@
+/* Start carousel section */
+    .carousel-item {
+      position: relative;
+    }
+
+    .carousel-img {
+      width: 100%;
+    }
+
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5);
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+    }

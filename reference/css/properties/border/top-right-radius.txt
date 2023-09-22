@@ -1,0 +1,36 @@
+Certainly, let's delve into a comprehensive explanation of the `border-top-right-radius` property in CSS:
+
+**What is `border-top-right-radius`?**
+The `border-top-right-radius` property in CSS is used to set the radius of the top-right corner of an element. It allows you to create a rounded corner effect at the top-right corner of the element.
+
+**Why is `border-top-right-radius` used?**
+`border-top-right-radius` is used to create a visually appealing design by rounding the top-right corner of an element, which can soften the appearance of sharp edges.
+
+**How to use `border-top-right-radius`?**
+The syntax is straightforward:
+
+```css
+element {
+  border-top-right-radius: value;
+}
+```
+
+Replace `value` with the desired radius value. This value can be in pixels (px), percentages (%), em, or other length units.
+
+Here's an example:
+
+```css
+/* Apply a rounded top-right corner to an element */
+.element {
+  border-top-right-radius: 10px;
+}
+```
+
+**Additional Notes:**
+- The `border-top-right-radius` property is part of the broader `border-radius` property, which allows you to set radii for all four corners individually.
+- You can use `border-top-right-radius` in combination with other corner radii properties to create various corner styles.
+
+**Browser Support:**
+As of my last update in September 2021, `border-top-right-radius` is widely supported in modern browsers. However, always consider checking the latest browser compatibility information on sites like MDN Web Docs or Can I use.
+
+I hope this comprehensive explanation clarifies the usage and significance of the `border-top-right-radius` property. If you have more questions or need further assistance, feel free to ask!

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Syntway</title>
+  
+    <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+  
+  <!-- Include Bootstrap CSS for FAQ -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- bootstrap icon cdn --> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <!-- header bootstrap cdn -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <!-- FontAwesome icon cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <!-- Custom cascade.css file -->
+  <link rel="stylesheet" href="./assets/courses/css/cascade/cascade.css">
+  <!-- write Coding for debug faq and toggler section -->
+  <style>
+    .navbar-toggler:focus {
+      outline: 2px solid black !important;
+      outline-offset: -2px !important;
+      box-shadow: none !important; 
+    }
+    .accordion-button:focus {
+      box-shadow: none !important; 
+    }
+ 
+  </style>
+</head>
+<body>
+  <!-- Start body container -->
+  <div class="body-container">
+    <!-- container coding start-->
+    <div class="container-fluid">
+      
+      <!--=== header coding start ===-->
+      <div class="row sticky-top" id="header">
+         <div class="col-md-12 p-0">
+          <div class="card shadow">
+            <div class="card-body p-0">
+              <div class="d-flex align-items-center py-1">
+             <!-- home icon coding -->
+                <div class="px-2">
+                  <a href="./services.html">
+                    <button type="button" class="btn btn-outline-primary" id="sidebar-icon"><i class="bi bi-house-up"></i></button>
+                  </a>
+                </div>
+                
+              <!-- sidebar offcanvas coding
+              btn-controll -->
+                <div class="px-2 d-md-none">
+                  <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    <i class="bi bi-layout-sidebar"></i>
+                  </button>
+                </div>
+              <!--  offcanvas-start   -->
+                <div class="d-md-none offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                  <div class="offcanvas-header bg-light shadow">
+                    <h5 class="offcanvas-title" id="staticBackdropLabel"><!--header--></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body p-0">
+                    <div class="card shadow p-0">
+                      <div class="card-body p-0" id="offcanvas-html">
+                        <!-- dynamic navlink -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+               <!--  search bar coding -->
+                <div class="input-group px-2 d-none d-md-flex w-25">
+                  <input type="text" class="form-control" placeholder="Enter your query..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <button class="btn btn-outline-primary" type="button" id="button-addon2">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+                
+              <!--   title coding -->
+                <div class="text-primary ms-auto px-2">
+                  <p class="fs-6 m-0" id="title">Powered by Syntway</p>
+                </div>
+                
+              </div><!-- header coding end -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--=== header coding end ===-->
+      
+      <!--=== content codign start ===-->
+      <div class="row">
+    <!-- navlink coding start -->      
+        <div class="col-md-3 d-none d-md-block p-0 overflow-auto">
+          <div class="card shadow p-0">
+            <div class="card-body p-0" id="sidebar-html">
+              <!-- here add dynamic code -->
+            </div>
+          </div>
+        </div>
+          <!--navlink coding end-->
+          
+        <!--content coding start -->
+        <div id="content-bar" class="col-md-9 content p-0 overflow-auto">
+          <div class="card shadow">
+            <div class="card-body p-2">
+            <!-- === content coding start === -->
+              <div class="carousel-inner">
+                <!-- === One === -->
+                <section class="carousel-item active section">
+                  Section no. 1.1 
+                </section>
+                
+                <!-- === Two === -->
+                <section class="carousel-item section">
+                  Section no. 1.2 
+                </section>
+                
+                <!-- === Three === -->
+                <section class="carousel-item section">
+                  Section no. 2.1 
+                </section>
+                
+                <!-- === Four === -->
+                <section class="carousel-item section">
+                  Section no. 2.2 
+                </section>
+              </div>
+            <!-- === content coding end === -->
+            </div>
+          </div>
+        </div>
+        <!-- content coding end -->
+      </div>
+      <!--=== content coding end ===-->
+      
+      <!-- === footer coding start === -->
+      <div class="row z-0 sticky-bottom" id="footer">
+        <div class="col-md-12 p-0">
+          <div class="card shadow">
+            <div class="card-body p-0">
+               <div class="d-flex align-items-center py-1 justify-content-center">
+                 <!-- footer coding start -->
+                 <div class="d-none d-md-flex px-2 text-secondary flex-grow-1">
+                   <p class="fs-6 m-0" id="title">Powered by Syntway</p>
+                 </div>
+                 
+                <!--  btn controls coding start -->
+                 <div class="px-2 btn-control">
+                   <button type="button" class="btn btn-outline-primary prev-slide" data-slide="prev" id="sidebar-icon">
+                     Prev
+                   </button>
+                 </div>
+                 
+                 <div class="px-2 btn-control">
+                   <button type="button" class="btn btn-outline-primary next-slide" data-slide="next" id="sidebar-icon">
+                     Next
+                   </button>
+                 </div>
+              <!-- btn controls coding end -->
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--=== footer coding end ===-->
+      
+    <!-- container coding end -->
+    </div>
+  <!-- End body container -->
+  </div>
+  <!-- Include Bootstrap JS (Popper.js and Bootstrap's JavaScript) for  FAQ -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <!-- header bootstrap and jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom script file -->
+  <script type="module" src="./assets/courses/js/cascade/index.js"></script>
+  
+</body>
+</html>

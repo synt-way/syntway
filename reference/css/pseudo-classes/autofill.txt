@@ -1,0 +1,62 @@
+The `:autofill` pseudo-class in CSS is used to target form elements (input, textarea, select) that have been automatically filled by the browser's autofill feature. This pseudo-class allows you to style autofill input elements differently from other input elements.
+
+**Syntax:**
+```css
+input:-webkit-autofill {
+    /* CSS rules for autofill input elements in WebKit-based browsers */
+}
+
+input:-moz-autofill {
+    /* CSS rules for autofill input elements in Mozilla Firefox */
+}
+```
+
+Here's a breakdown of the `:autofill` pseudo-class:
+
+1. **What is the `:autofill` Pseudo-Class in CSS?**
+   - The `:autofill` pseudo-class is used to target form elements that have been automatically filled by the browser's autofill feature. It allows you to apply custom styles to these autofilled elements.
+
+2. **Why Use the `:autofill` Pseudo-Class?**
+   - You use the `:autofill` pseudo-class to provide a consistent and visually appealing appearance to autofilled form elements. This helps maintain the design and user experience of your web application even when the browser autofills user data.
+
+3. **Where Can You Use the `:autofill` Pseudo-Class?**
+   - You can use it in your CSS stylesheets to target and style autofilled form elements, including input fields, textareas, and select dropdowns.
+
+4. **How to Use the `:autofill` Pseudo-Class?**
+   - To use it, you need to specify vendor-specific pseudo-classes for autofill because different browsers have different implementations. For example, WebKit-based browsers use `-webkit-autofill`, and Mozilla Firefox uses `-moz-autofill`. Define the CSS rules inside the curly braces `{}` that follow these pseudo-classes.
+
+   ```css
+   /* Style autofilled input elements in WebKit-based browsers */
+   input:-webkit-autofill {
+       background-color: #ffffcc; /* Yellow background color */
+       color: #333; /* Text color */
+   }
+
+   /* Style autofilled input elements in Mozilla Firefox */
+   input:-moz-autofill {
+       background-color: #ffffcc;
+       color: #333;
+   }
+   ```
+
+5. **SEO Considerations:**
+   - The `:autofill` pseudo-class itself does not have a direct impact on SEO. It is primarily a styling tool used to enhance the visual appearance of autofilled form elements.
+
+6. **Additional Notes:**
+   - The autofill pseudo-class is browser-specific, so you need to use vendor prefixes to target different browsers' implementations.
+   - Be cautious when restyling autofilled form elements, as it may affect the user's familiarity with the autofill feature. Ensure that the styling maintains usability and does not confuse users.
+
+7. **Browser Support:**
+   - Support for styling autofilled form elements using `:autofill` pseudo-classes varies by browser. As mentioned earlier, you should use `-webkit-autofill` for WebKit-based browsers (e.g., Chrome, Safari) and `-moz-autofill` for Mozilla Firefox. Check the documentation and updates for specific browsers to confirm support.
+
+Here's an example of how you might use the `:autofill` pseudo-class in a CSS stylesheet to style autofilled input elements:
+
+```css
+/* Style autofilled input elements in Chrome and Safari */
+input:-webkit-autofill {
+    background-color: #ffffcc; /* Yellow background color */
+    color: #333; /* Text color */
+}
+```
+
+In this example, autofilled input fields in Chrome and Safari will have a yellow background color and dark text color, creating a distinct appearance for autofilled data.

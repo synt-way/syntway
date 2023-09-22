@@ -1,0 +1,56 @@
+The `mask-border` CSS property is used to apply a mask to the border of an element, creating a masking effect that affects the visibility of the border itself. It allows you to define a mask image or gradient that is applied to the borders of an element, resulting in unique border styles.
+
+Here's a comprehensive explanation of the `mask-border` property using the provided template:
+
+### **What is the `mask-border` Property?**
+The `mask-border` property in CSS is used to apply a mask to the border of an element. It enables you to define a mask image or gradient that determines the visibility of the border, allowing for creative and intricate border designs.
+
+### **Usage:**
+The syntax for using the `mask-border` property is as follows:
+
+```css
+selector {
+  mask-border: mask-source slice repeat;
+}
+```
+
+Where `selector` is the target element, `mask-source` is the mask image or gradient, `slice` is an optional parameter to define how the mask is sliced, and `repeat` is an optional parameter to define how the mask is repeated.
+
+### **Example:**
+```css
+.element {
+  width: 200px;
+  height: 200px;
+  border: 10px solid black;
+  mask-border: url('mask-image.png') 10 fill;
+}
+```
+
+In the example above, the `.element` will have a black border, and the `mask-image.png` will be applied to the border using a 10px slice and filled repetition.
+
+### **Why Use the `mask-border` Property?**
+The `mask-border` property allows you to create intricate and custom border designs by applying masks to the borders of elements. It's useful for adding visual interest and unique styles to your website's UI.
+
+### **Where to Use the `mask-border` Property?**
+Use the `mask-border` property on elements where you want to apply a mask to the borders, such as divs, images, and other HTML elements with borders.
+
+### **How to Use the `mask-border` Property:**
+1. Prepare the mask source, which can be an image or gradient.
+2. Define the slice and repeat parameters if needed.
+3. Apply the `mask-border` property to the element, specifying the mask source, slice, and repeat.
+
+### **Example Values:**
+- `mask-border: url('mask-image.png') 10 fill;`: Applies a mask image to the border with a 10px slice and filled repetition.
+- `mask-border: linear-gradient(...) 20px round;`: Applies a linear gradient to the border with a 20px slice and rounded repetition.
+
+### **SEO Considerations:**
+The `mask-border` property itself doesn't directly impact SEO. However, using creative border designs with masks can enhance your website's aesthetics and user experience, which can indirectly affect SEO.
+
+### **Additional Notes:**
+- The `mask-border` property provides an alternative way to style borders beyond the traditional `border` property.
+- The order of parameters (mask-source, slice, repeat) matters.
+
+### **Browser Support:**
+The `mask-border` property is supported in modern browsers. However, like with many CSS features, it's recommended to check compatibility for specific values and features when using newer properties.
+
+Please note that browser support and specific syntax details may have evolved after my last knowledge update in September 2021. Always refer to up-to-date documentation and resources for the latest information on CSS properties.

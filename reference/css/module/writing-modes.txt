@@ -1,0 +1,52 @@
+**CSS Writing Modes**
+
+**What:**
+CSS Writing Modes refer to the ability to control the direction in which text flows within an element. Writing modes are particularly useful for languages and scripts that are not written from left to right, such as Arabic, Hebrew, and vertical scripts like Chinese and Japanese.
+
+**Example:**
+Here's an example of using CSS Writing Modes to change the text direction:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .vertical-text {
+    writing-mode: vertical-lr; /* vertical text from left to right */
+    text-orientation: upright;
+  }
+
+  .rtl-text {
+    direction: rtl; /* right-to-left text */
+  }
+</style>
+</head>
+<body>
+
+<div class="vertical-text">Vertical Text</div>
+<p class="rtl-text">This is a right-to-left paragraph.</p>
+
+</body>
+</html>
+```
+
+**Why:**
+CSS Writing Modes are used to correctly display content in languages and scripts that have non-standard text flow directions. They ensure that the text is displayed as intended, improving readability and user experience.
+
+**Where:**
+CSS Writing Modes are applicable when you want to correctly display text in languages that use different writing directions, such as:
+- Arabic, Hebrew, and other right-to-left languages.
+- Vertical scripts like Chinese, Japanese, and Mongolian.
+
+**How:**
+Use the `writing-mode` property to specify the writing direction, such as `horizontal-tb` for horizontal text, `vertical-lr` for vertical text, and more.
+
+**SEO:**
+CSS Writing Modes themselves don't have a direct impact on SEO. However, using proper writing modes for specific languages enhances readability and user experience, which might indirectly influence SEO.
+
+**Additional Notes:**
+- Writing Modes can affect the layout and behavior of other CSS properties. Consider how they interact with other styling elements.
+- When using vertical writing modes, you might need to adjust other properties like `text-orientation` to ensure proper rendering.
+
+**Browser Support:**
+CSS Writing Modes are supported by modern browsers. However, older browsers might not fully support all writing mode features, especially for more complex scripts. Always test your content across different browsers to ensure consistent rendering.

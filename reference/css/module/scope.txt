@@ -1,0 +1,52 @@
+**CSS Scoping**
+
+**What:**
+CSS scoping refers to techniques used to limit the scope of CSS rules and styles to specific parts of a web page, preventing them from affecting other elements. This is particularly useful when you want to apply styles to a specific component or module without causing unintended side effects.
+
+**Example:**
+Here's an example of using CSS scoping with the `:scope` pseudo-class to style only the direct children of a specific element:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .component > :scope {
+    background-color: lightblue;
+  }
+</style>
+</head>
+<body>
+
+<div class="component">
+  <p>This is a paragraph.</p>
+  <div>
+    <p>This paragraph is not affected by the style.</p>
+  </div>
+</div>
+
+</body>
+</html>
+```
+
+**Why:**
+CSS scoping is used to prevent the unintended spread of styles across various elements in a web page. It helps ensure that styles only apply to the intended components or modules, reducing the risk of conflicts and making the codebase more maintainable.
+
+**Where:**
+CSS scoping is applicable when you want to:
+- Apply styles to specific components or modules.
+- Avoid unintentional style conflicts with other parts of the page.
+- Improve code organization and maintainability.
+
+**How:**
+Use techniques like the `:scope` pseudo-class, classes, IDs, or CSS-in-JS solutions to scope your styles to specific elements or components.
+
+**SEO:**
+CSS scoping itself doesn't have a direct impact on SEO. However, cleaner and more organized code resulting from proper scoping can indirectly lead to improved code maintainability and better overall performance, which can impact SEO.
+
+**Additional Notes:**
+- CSS scoping is particularly useful when working with CSS-in-JS libraries or when using component-based frameworks like React or Angular.
+- Avoid using overly specific selectors that make your styles too tightly coupled to the HTML structure.
+
+**Browser Support:**
+CSS scoping techniques like the `:scope` pseudo-class are supported by modern browsers. However, some advanced techniques might have varying degrees of support or require browser-specific prefixes. Always test your scoped styles across different browsers to ensure consistent behavior.

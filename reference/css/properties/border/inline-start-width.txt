@@ -1,0 +1,19 @@
+As of my last update in September 2021, the property `border-inline-start-width` is not a standard CSS property. However, if you're trying to achieve a specific border width on the start (beginning) side of an inline element, you can use pseudo-elements like `::before` and style them using standard border properties like `border-width`.
+
+Here's an example:
+
+```css
+/* Apply a custom border width at the start of an inline element */
+.inline-start-border::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  border-top: 3px solid purple; /* Set the desired border color and width */
+  margin-right: 5px; /* Adjust as needed */
+}
+```
+
+In this example, the `::before` pseudo-element is used to create a purple horizontal line at the start of the inline element with the class `.inline-start-border`.
+
+Always keep in mind that CSS capabilities can evolve, and new features might have been introduced after September 2021. For the most accurate and up-to-date information, refer to the latest CSS specifications or resources like MDN Web Docs.

@@ -1,0 +1,32 @@
+As of my last knowledge update in September 2021, the CSS property `text-decoration-thickness` was not widely supported in most browsers. However, I'll provide an explanation and example based on its intended functionality.
+
+**What is `text-decoration-thickness`?**
+`text-decoration-thickness` is a CSS property that specifies the thickness of the lines used for text decorations like underlines, overlines, and line-throughs. It allows you to control the width or thickness of these lines, providing finer control over the visual appearance of text decorations.
+
+**Why is `text-decoration-thickness` used?**
+`text-decoration-thickness` is used to customize the visual style of text decorations. By adjusting the thickness of the lines, you can create different design effects and enhance the overall aesthetics of text on a web page.
+
+**Where is `text-decoration-thickness` applied?**
+You can apply the `text-decoration-thickness` property to various HTML elements that contain text content, such as `<a>`, `<p>`, `<span>`, and others. However, browser support may be limited.
+
+**How to use `text-decoration-thickness` with examples:**
+Here's an example of how to use `text-decoration-thickness`, although keep in mind that support may be limited:
+
+```css
+.custom-decoration {
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Set the thickness to 2 pixels */
+}
+```
+
+In this example, the `text-decoration-thickness` property is used to set the thickness of the underline to 2 pixels.
+
+**SEO implications:**
+As of my last knowledge update, `text-decoration-thickness` had no direct impact on SEO (Search Engine Optimization). SEO primarily involves optimizing content, meta tags, and other factors to improve a website's visibility in search engine results. This property is primarily used for visual styling and does not affect the underlying content or SEO.
+
+**Additional Notes:**
+- The `text-decoration-thickness` property can accept values in various units, such as pixels (`px`) or ems (`em`), to specify the thickness of text decorations.
+- Its precise behavior and availability may vary among browsers, so it's essential to check current browser compatibility when using this property.
+
+**Browser Support:**
+Browser support for `text-decoration-thickness` may be limited, and it might not be widely supported in all browsers. As of my last knowledge update in September 2021, it was not commonly supported in most browsers. To ensure compatibility, always check the current browser support when using this property in your projects.

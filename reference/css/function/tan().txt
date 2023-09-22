@@ -1,0 +1,33 @@
+The `tan()` function is a mathematical function used to calculate the tangent of an angle. It's one of the trigonometric functions and is commonly used in mathematics, physics, engineering, and computer programming for various calculations involving angles and slopes. Let's explore `tan()` in more detail:
+
+**What is the `tan()` function?**
+The `tan()` function calculates the tangent of an angle in radians. The tangent of an angle is defined as the ratio of the length of the side opposite the angle to the length of the side adjacent to the angle in a right triangle.
+
+**Why is `tan()` used?**
+`tan()` is used for a variety of purposes, including solving problems related to angles and slopes, calculating inclinations, and modeling periodic or oscillatory behavior in various fields.
+
+**Where is `tan()` used?**
+You can use the `tan()` function in programming languages that provide it as a built-in function or method. It's applied in mathematical calculations, geometry, physics simulations, and engineering tasks.
+
+**How to use `tan()` with examples (in JavaScript):**
+Here's an example of how to use the `tan()` function in JavaScript to calculate the tangent of an angle in radians:
+
+```javascript
+const angleInRadians = Math.PI / 4; // 45 degrees in radians
+const tangentValue = Math.tan(angleInRadians);
+
+console.log(tangentValue); // Output: 1
+```
+
+In this example, we calculate the tangent of an angle of 45 degrees (which is equivalent to `π / 4` radians) using `Math.tan()`. The result is `1`, indicating that the tangent of 45 degrees is `1`.
+
+**SEO implications:**
+The use of the `tan()` function itself does not have a direct impact on SEO (Search Engine Optimization). SEO primarily involves optimizing content, meta tags, and other factors to improve a website's visibility in search engine results. The `tan()` function is typically used for mathematical and scientific calculations and does not directly affect SEO.
+
+**Additional Notes:**
+- The tangent function has periodic behavior with a period of π radians (180 degrees). This means that the tangent of an angle repeats its values after every π radians.
+- In trigonometry, the tangent of an angle θ is often denoted as "tan(θ)."
+- Tangent values can be used to calculate slopes, angles of inclination, and various geometric properties.
+
+**Browser Support:**
+The `tan()` function in JavaScript is part of the `Math` object and is widely supported in modern browsers, including Chrome, Firefox, Safari, Edge, and Internet Explorer 6 and later. It is a fundamental mathematical function used in web development and scientific applications.

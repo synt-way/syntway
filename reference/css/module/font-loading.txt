@@ -1,0 +1,56 @@
+**CSS Font Loading**
+
+**What:**
+CSS font loading refers to the process of loading custom fonts for use on a webpage. It involves specifying font sources, ensuring fonts are loaded efficiently, and managing font rendering to maintain a consistent design and user experience.
+
+**Example:**
+Here's an example of using `@font-face` to load a custom font and apply it to an element:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  @font-face {
+    font-family: 'CustomFont';
+    src: url('customfont.woff2') format('woff2'),
+         url('customfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .custom-text {
+    font-family: 'CustomFont', sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<p class="custom-text">This is custom font text.</p>
+
+</body>
+</html>
+```
+
+**Why:**
+CSS font loading allows you to enhance your website's typography by using unique, non-standard fonts. Custom fonts can help establish brand identity, improve design aesthetics, and make content more engaging.
+
+**Where:**
+CSS font loading is used whenever you want to use non-standard fonts for your website's text content. This includes headings, paragraphs, buttons, and any other text-based elements.
+
+**How:**
+1. Use the `@font-face` rule to define the font and its source.
+2. Specify the font family name, font file paths, and formats (e.g., WOFF, WOFF2).
+3. Apply the custom font to specific elements using the `font-family` property.
+
+**SEO:**
+CSS font loading itself doesn't have a direct impact on SEO. However, using custom fonts can contribute to a unique visual identity and enhance user engagement, indirectly affecting SEO by potentially increasing time spent on your website.
+
+**Additional Notes:**
+- Consider font file formats (WOFF, WOFF2, TTF, EOT) based on browser support and file size.
+- Use `font-display` property to control font rendering behavior during loading.
+- Utilize web font services or Content Delivery Networks (CDNs) for optimized font loading.
+- Test font loading on various devices and network conditions to ensure performance.
+
+**Browser Support:**
+CSS font loading is supported by modern browsers. However, different font formats might have varying degrees of support across browsers. Always test your font loading implementation across different browsers to ensure consistent rendering and performance.

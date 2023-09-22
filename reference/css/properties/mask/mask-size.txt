@@ -1,0 +1,60 @@
+The `mask-size` CSS property is used to define the size of a mask image or gradient that is applied to an element using the `mask` property. It allows you to control the dimensions of the mask, which can impact how the mask is scaled or displayed within the element.
+
+Here's a comprehensive explanation of the `mask-size` property using the provided template:
+
+### **What is `mask-size`?**
+The `mask-size` property in CSS is used to set the size of a mask image or gradient when using the `mask` property. It specifies the dimensions of the mask content, allowing you to control how the mask is scaled or displayed within the element.
+
+### **Usage:**
+The syntax for using the `mask-size` property is as follows:
+
+```css
+selector {
+  mask-size: value;
+}
+```
+
+Where `selector` is the target element, and `value` represents one or two values indicating the width and height of the mask.
+
+### **Example:**
+```css
+.element {
+  background-color: blue;
+  mask: url('mask-image.png');
+  mask-size: cover;
+}
+```
+
+In the example above, the `.element` will have a blue background, and the mask from `mask-image.png` will be scaled to cover the entire element's content area.
+
+### **Values of `mask-size`:**
+- Length values: Specifies the width and/or height of the mask using length values (e.g., `200px`, `50%`).
+- Keywords: Keywords like `auto`, `contain`, and `cover` can be used to define the mask's size behavior.
+
+### **Why Use `mask-size`?**
+The `mask-size` property allows you to control the size of a mask image or gradient, which can impact how the mask is displayed within the element. This is especially useful when you want to control the scaling of the mask.
+
+### **Where to Use `mask-size`?**
+Use the `mask-size` property on elements where you've applied a mask using the `mask` property and want to define the size of the mask.
+
+### **How to Use `mask-size`:**
+1. Choose the desired size behavior (`length`, `auto`, `contain`, or `cover`).
+2. Apply the `mask-size` property to the element, specifying the chosen value.
+
+### **Example Values:**
+- `mask-size: 200px 100px;`: Sets the mask's width to 200 pixels and height to 100 pixels.
+- `mask-size: auto;`: Keeps the mask's original dimensions.
+- `mask-size: contain;`: Scales the mask to fit within the element's content area.
+- `mask-size: cover;`: Scales the mask to cover the entire element's content area.
+
+### **SEO Considerations:**
+The `mask-size` property itself doesn't have a direct impact on SEO. It's primarily used for styling and visual effects.
+
+### **Additional Notes:**
+- The `mask-size` property works in conjunction with the `mask` property.
+- The behavior of the mask's size might also be influenced by other factors such as the mask's aspect ratio.
+
+### **Browser Support:**
+The `mask-size` property is supported in modern browsers. Always test in different browsers to ensure consistent behavior.
+
+Please note that browser support and specific syntax details may have evolved after my last knowledge update in September 2021. Always refer to up-to-date documentation and resources for the latest information on CSS properties.

@@ -1,0 +1,21 @@
+As of my last update in September 2021, there's no CSS property named `border-inline-end`. However, based on the name, it sounds like it could be related to inline-level styling for borders.
+
+If you're looking to apply specific border styles to the end of an inline element (perhaps to indicate the end of a sentence or a specific inline content block), you might want to use the existing `::before` and `::after` pseudo-elements, along with CSS properties like `content`, `border`, and `display`.
+
+Here's a conceptual example:
+
+```css
+/* Apply a custom "border" at the end of an inline element */
+.inline-end-border::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  background-color: black;
+  margin-left: 5px;
+}
+```
+
+In this example, the `::after` pseudo-element is used to add a black horizontal line that could be perceived as an "end border" to the inline element with the class `.inline-end-border`.
+
+Please provide more context if you have a specific use case or requirement in mind, as CSS capabilities can vary widely and there may have been developments or new features introduced after September 2021. Always refer to the latest CSS specifications or resources like MDN Web Docs for the most up-to-date information.

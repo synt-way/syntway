@@ -1,0 +1,26 @@
+ /* Google Material Icons */
+    .material-icons {
+      font-size: 32px;
+    }
+    /* use the .h-card class any element for hover style */
+   .h-card:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #00ff;
+    -webkit-user-select: none;
+    user-select: none;
+   }
+   .h-card:hover .card-title {
+     color: #00ff;
+   }
+   .h-card:hover i {
+     color: green;
+   }
+   .h-card:active {
+     border-bottom: 2px solid green;
+   }
+   .h-card:active i {
+     color: #00ff;
+   }
+   .h-card:active .card-title {
+     color: green;
+   }

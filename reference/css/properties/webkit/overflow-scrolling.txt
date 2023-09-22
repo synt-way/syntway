@@ -1,0 +1,44 @@
+The `-webkit-overflow-scrolling` property is a non-standard CSS property used in older versions of WebKit-based browsers (such as Safari) to control the scrolling behavior of elements with overflow content, particularly on touch-enabled devices. This property affects the smoothness and momentum of scrolling when users interact with the element via touch gestures. As of my last knowledge update in September 2021, this property is still supported in WebKit-based browsers like Safari, but it's not part of the CSS standard and is not supported in other modern browsers like Chrome or Firefox.
+
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .scrollable-container {
+    width: 300px;
+    height: 200px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; /* Enable touch-based scrolling */
+  }
+</style>
+</head>
+<body>
+
+<div class="scrollable-container">
+  <!-- Overflow content here -->
+</div>
+
+</body>
+</html>
+```
+
+**Why:**
+The `-webkit-overflow-scrolling` property was used to improve the scrolling experience on touch-enabled devices. It allowed developers to achieve smoother and more responsive scrolling behavior, similar to native scrolling in mobile apps.
+
+**Where:**
+In the context of its historical usage, the `-webkit-overflow-scrolling` property could be applied to elements with overflowing content that needed scrolling, particularly on touch devices.
+
+**How:**
+The `-webkit-overflow-scrolling` property accepted values like `auto` and `touch`. The `auto` value provided the default scrolling behavior of the browser, while the `touch` value enabled the smooth touch-based scrolling behavior.
+
+**SEO:**
+The `-webkit-overflow-scrolling` property and its usage have no direct impact on SEO, as it's primarily a styling property that affects the user experience on touch devices.
+
+**Additional Notes:**
+- `-webkit-overflow-scrolling` is specific to WebKit-based browsers like Safari and is not part of the CSS standard.
+- The property is particularly useful for improving the touch-scrolling experience on mobile devices, making scrolling feel more natural and responsive.
+
+**Browser Support:**
+The `-webkit-overflow-scrolling` property is supported in older versions of WebKit-based browsers like Safari. It's not supported in other modern browsers like Chrome or Firefox. When using this property, consider providing alternative scrolling styles for other browsers or using other techniques for broader compatibility.

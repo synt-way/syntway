@@ -1,0 +1,42 @@
+The `-moz-force-broken-image-icon` property is a non-standard CSS property that was used in older versions of Mozilla Firefox to control whether a broken image icon should be displayed for missing or broken images on a webpage. However, this property is no longer supported in modern browsers, including recent versions of Firefox. As of my last knowledge update in September 2021, this property is deprecated and not recommended for use.
+
+Given that this property is obsolete and not widely supported, I'll provide an example and explanation of how it used to work:
+
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  img {
+    -moz-force-broken-image-icon: 1; /* Show the broken image icon */
+  }
+</style>
+</head>
+<body>
+
+<img src="nonexistent-image.jpg" alt="Broken Image">
+
+</body>
+</html>
+```
+
+**Why:**
+The `-moz-force-broken-image-icon` property was used in Mozilla Firefox to control whether the browser should display a default broken image icon for images that couldn't be loaded due to a missing or incorrect URL.
+
+**Where:**
+In the context of its historical usage, the `-moz-force-broken-image-icon` property could be applied to `<img>` elements to specify whether the broken image icon should be shown for images that failed to load.
+
+**How:**
+The `-moz-force-broken-image-icon` property accepted a single value of `1` to indicate that the browser should display the broken image icon.
+
+**SEO:**
+The `-moz-force-broken-image-icon` property and its usage have no direct impact on SEO, as it was a browser-specific and non-standard feature related to image display.
+
+**Additional Notes:**
+- The `-moz-force-broken-image-icon` property was specific to Mozilla Firefox and was not part of the CSS standard.
+- Modern browsers, including newer versions of Firefox, no longer support this property.
+- For handling missing or broken images, it's best to use the `alt` attribute to provide alternative text that describes the image's content.
+
+**Browser Support:**
+The `-moz-force-broken-image-icon` property was supported only in older versions of Mozilla Firefox. It is no longer supported in modern browsers. Always prioritize using standard practices for handling images to ensure compatibility across different browsers.

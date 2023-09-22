@@ -1,0 +1,23 @@
+As of my last update in September 2021, the property `border-inline-color` does not exist in standard CSS. It's possible that there might have been developments or new properties introduced since then.
+
+If you are looking to apply inline borders with specific colors to individual sides of an element, you would generally use the standard `border` property along with side-specific properties such as `border-top-color`, `border-right-color`, `border-bottom-color`, and `border-left-color`.
+
+Here's an example of how you could achieve this:
+
+```css
+/* Apply different colors to each side of an inline border */
+.inline-border {
+  display: inline;
+  border-style: solid;
+  border-width: 1px;
+  border-top-color: red;
+  border-right-color: green;
+  border-bottom-color: blue;
+  border-left-color: orange;
+  padding: 5px;
+}
+```
+
+In this example, the `border-top-color`, `border-right-color`, `border-bottom-color`, and `border-left-color` properties are used to set different colors for each side of the border.
+
+Remember to check the most recent CSS specifications or resources like MDN Web Docs for any updates or new properties introduced after September 2021.

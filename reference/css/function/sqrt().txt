@@ -1,0 +1,32 @@
+The `sqrt()` function is a mathematical function used to calculate the square root of a number. It's a fundamental mathematical operation and is commonly used in various fields, including mathematics, physics, engineering, and computer programming. Let's explore `sqrt()` in more detail:
+
+**What is the `sqrt()` function?**
+The `sqrt()` function calculates the square root of a number, which is the value that, when multiplied by itself, gives the original number. In other words, it finds the non-negative number whose square is equal to the input number.
+
+**Why is `sqrt()` used?**
+`sqrt()` is used for various purposes, such as calculating distances, solving equations involving square roots, and determining the magnitude of vectors in physics. It's a fundamental operation in mathematics and is frequently used in scientific and engineering calculations.
+
+**Where is `sqrt()` used?**
+You can use the `sqrt()` function in programming languages that provide it as a built-in function or method. It's applied in mathematical calculations, geometry, physics simulations, and data analysis.
+
+**How to use `sqrt()` with examples (in JavaScript):**
+Here's an example of how to use the `sqrt()` function in JavaScript to calculate the square root of a number:
+
+```javascript
+const number = 25;
+const squareRoot = Math.sqrt(number);
+
+console.log(squareRoot); // Output: 5
+```
+
+In this example, we calculate the square root of `25` using `Math.sqrt()`. The result is `5` because the square root of `25` is `5`.
+
+**SEO implications:**
+The use of the `sqrt()` function itself does not have a direct impact on SEO (Search Engine Optimization). SEO primarily involves optimizing content, meta tags, and other factors to improve a website's visibility in search engine results. The `sqrt()` function is typically used for mathematical and scientific calculations and does not directly affect SEO.
+
+**Additional Notes:**
+- In addition to `Math.sqrt()` in JavaScript, similar functions or methods are available in other programming languages, such as `numpy.sqrt()` in Python.
+- The square root is represented using the radical symbol (√) in mathematical notation, and the `sqrt()` function provides a practical way to calculate it numerically.
+
+**Browser Support:**
+The `sqrt()` function in JavaScript is part of the `Math` object and is widely supported in modern browsers, including Chrome, Firefox, Safari, Edge, and Internet Explorer 6 and later. It is a fundamental mathematical function used in web development and scientific applications.

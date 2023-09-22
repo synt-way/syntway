@@ -1,0 +1,41 @@
+The `-webkit-text-fill-color` property is a non-standard CSS property used in older versions of WebKit-based browsers (such as Safari) to set the fill color of the text content within an element. This property allows developers to specify the color of the actual text content, which is distinct from other text-related properties that might affect text decorations or shadows. As of my last knowledge update in September 2021, this property is still supported in WebKit-based browsers like Safari, but it's not part of the CSS standard and is not supported in other modern browsers like Chrome or Firefox.
+
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .colored-text {
+    -webkit-text-fill-color: blue; /* Set the text fill color */
+  }
+</style>
+</head>
+<body>
+
+<p class="colored-text">
+  This text has a custom fill color.
+</p>
+
+</body>
+</html>
+```
+
+**Why:**
+The `-webkit-text-fill-color` property was used to apply a custom fill color to the text content within an element. It allowed developers to have more control over the color of the actual text, separate from other text styles.
+
+**Where:**
+In the context of its historical usage, the `-webkit-text-fill-color` property could be applied to elements containing text content where a custom fill color was desired.
+
+**How:**
+The `-webkit-text-fill-color` property accepted color values, such as hexadecimal or RGB values, to specify the fill color of the text content.
+
+**SEO:**
+The `-webkit-text-fill-color` property and its usage have no direct impact on SEO, as it's primarily a styling property that affects the visual appearance of text content.
+
+**Additional Notes:**
+- `-webkit-text-fill-color` is specific to WebKit-based browsers like Safari and is not part of the CSS standard.
+- Keep in mind that while this property can be used to customize the text fill color, it might not work as expected in non-WebKit browsers. Use it with caution and consider alternative techniques for broader compatibility.
+
+**Browser Support:**
+The `-webkit-text-fill-color` property is supported in older versions of WebKit-based browsers like Safari. It's not supported in other modern browsers like Chrome or Firefox. When using this property, consider providing alternative styles for other browsers or using other techniques for broader compatibility.

@@ -1,0 +1,45 @@
+The `-moz-image-region` property is a non-standard CSS property that was used in older versions of Mozilla Firefox to define a specific region of an image to be displayed. This property was part of the Mozilla-specific `-moz` prefix and was never part of the CSS standard. As of my last knowledge update in September 2021, this property is deprecated and not recommended for use in modern browsers, including recent versions of Firefox.
+
+Given that this property is obsolete and not widely supported, I'll provide an example and explanation of how it used to work:
+
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .clipped-image {
+    width: 100px;
+    height: 100px;
+    background-image: url('image.jpg');
+    -moz-image-region: rect(0px, 100px, 100px, 0px); /* Define the region to be displayed */
+  }
+</style>
+</head>
+<body>
+
+<div class="clipped-image"></div>
+
+</body>
+</html>
+```
+
+**Why:**
+The `-moz-image-region` property was used in Mozilla Firefox to specify a specific rectangular region of an image to be displayed within a designated element. It allowed developers to "clip" a portion of an image for display.
+
+**Where:**
+In the context of its historical usage, the `-moz-image-region` property could be applied to elements with a background image to define which portion of the image should be displayed within the element.
+
+**How:**
+The `-moz-image-region` property used the `rect()` function to specify the coordinates of the rectangular region within the image to be displayed.
+
+**SEO:**
+The `-moz-image-region` property and its usage have no direct impact on SEO, as it was a browser-specific and non-standard feature related to image display.
+
+**Additional Notes:**
+- The `-moz-image-region` property was specific to Mozilla Firefox and was not part of the CSS standard.
+- Modern browsers, including newer versions of Firefox, no longer support this property.
+- For cropping and displaying specific regions of images, it's recommended to use image editing tools to prepare the images before displaying them on a webpage.
+
+**Browser Support:**
+The `-moz-image-region` property was supported only in older versions of Mozilla Firefox. It is no longer supported in modern browsers. If you need to display specific regions of images, consider using image editing tools to prepare the images accordingly.

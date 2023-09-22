@@ -1,0 +1,57 @@
+The `mask-border-width` CSS property is used to define the width of the mask border when using the `mask-border` property. It specifies the width of the mask border image along the element's border, allowing you to control the visual thickness of the border.
+
+Here's a comprehensive explanation of the `mask-border-width` property using the provided template:
+
+### **What is `mask-border-width`?**
+The `mask-border-width` property in CSS is used to specify the width of the mask border when using the `mask-border` property. It determines the visual thickness of the mask border image along the element's border.
+
+### **Usage:**
+The syntax for using the `mask-border-width` property is as follows:
+
+```css
+selector {
+  mask-border-width: values;
+}
+```
+
+Where `selector` is the target element, and `values` represent one to four length values that define the width of the mask border on each side (top, right, bottom, left).
+
+### **Example:**
+```css
+.element {
+  mask-border: url('mask-image.png') 10 fill;
+  mask-border-width: 5px;
+}
+```
+
+In the example above, the `.element` will have a mask border applied from the `mask-image.png` with a 10px slice, and the mask border image will have a width of 5 pixels along all sides of the border.
+
+### **Values of `mask-border-width`:**
+- Length values: Define the width of the mask border image on each side.
+- You can use one to four values to specify different widths for different sides.
+
+### **Why Use `mask-border-width`?**
+The `mask-border-width` property allows you to control the visual thickness of a mask border image, which is useful for creating varying border effects.
+
+### **Where to Use `mask-border-width`?**
+Use the `mask-border-width` property in conjunction with the `mask-border` property on elements where you want to apply a mask border image and control its width.
+
+### **How to Use `mask-border-width`:**
+1. Determine the desired width of the mask border image on each side.
+2. Apply the `mask-border-width` property to the element, specifying the desired values.
+
+### **Example Values:**
+- `mask-border-width: 5px;`: Sets a mask border width of 5 pixels on all sides.
+- `mask-border-width: 2px 0 4px 1em;`: Sets different widths for each side in the order: top, right, bottom, left.
+
+### **SEO Considerations:**
+The `mask-border-width` property itself doesn't have a direct impact on SEO. It's primarily used for styling and visual effects.
+
+### **Additional Notes:**
+- The `mask-border-width` property is used in combination with the `mask-border` property.
+- The order of values corresponds to the order: top, right, bottom, left.
+
+### **Browser Support:**
+The `mask-border-width` property is supported in modern browsers. As with any CSS property, it's recommended to check compatibility and test the desired effects in different browsers.
+
+Please note that browser support and specific syntax details may have evolved after my last knowledge update in September 2021. Always refer to up-to-date documentation and resources for the latest information on CSS properties.

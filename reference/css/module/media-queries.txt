@@ -1,0 +1,51 @@
+**CSS Media Queries**
+
+**What:**
+CSS media queries are used to apply different styles to a webpage based on the characteristics of the user's device, such as screen size, resolution, orientation, and more. Media queries allow you to create responsive designs that adapt to various devices and screen sizes.
+
+**Example:**
+Here's an example of using a media query to adjust the font size for different screen sizes:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<p>This is a sample text.</p>
+
+</body>
+</html>
+```
+
+**Why:**
+CSS media queries are used to create responsive designs that provide an optimal user experience across different devices, such as desktops, tablets, and smartphones. They ensure that your website looks and functions well regardless of the screen size.
+
+**Where:**
+CSS media queries are applicable whenever you want to adjust your styles based on the device's characteristics. This includes layout changes, font size adjustments, and hiding or showing certain elements.
+
+**How:**
+Use the `@media` rule followed by a condition, such as `(max-width: 768px)` or `(orientation: landscape)`, to define styles that will be applied when the condition is met.
+
+**SEO:**
+CSS media queries themselves don't have a direct impact on SEO. However, responsive designs created with media queries can improve user experience, potentially leading to longer visits and reduced bounce rates, indirectly affecting SEO.
+
+**Additional Notes:**
+- Mobile-first design is a common approach where you start with mobile styles and use media queries to enhance for larger screens.
+- Test your responsive design on various devices and screen sizes to ensure consistent appearance.
+- Consider using flexible units like percentages and viewport units to make designs more adaptable.
+
+**Browser Support:**
+CSS media queries are supported by all modern browsers. However, it's essential to test your responsive designs across different browsers and devices to ensure consistent behavior.

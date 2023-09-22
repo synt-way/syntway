@@ -1,0 +1,43 @@
+The `-webkit-mask-composite` property is a non-standard CSS property used in older versions of WebKit-based browsers (such as Safari) to specify how multiple mask layers should be composited together. This property was used to control the blending mode of multiple mask images applied to an element. However, as of my last knowledge update in September 2021, this property is still supported in WebKit-based browsers like Safari, but it's not part of the CSS standard and is not supported in other modern browsers like Chrome or Firefox.
+
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .masked-element {
+    width: 200px;
+    height: 200px;
+    background-image: url('content-image.png');
+    -webkit-mask-box-image: url('mask-image.png');
+    -webkit-mask-composite: source-over; /* Set the mask composite mode */
+  }
+</style>
+</head>
+<body>
+
+<div class="masked-element"></div>
+
+</body>
+</html>
+```
+
+**Why:**
+The `-webkit-mask-composite` property was used to control how multiple mask layers should be composited together. It allowed developers to define how mask images should be combined to create a final masking effect.
+
+**Where:**
+In the context of its historical usage, the `-webkit-mask-composite` property could be applied to elements with multiple mask layers to control how they should be composited.
+
+**How:**
+The `-webkit-mask-composite` property accepted values like `source-over`, `source-in`, `source-out`, and `source-atop` to specify how the mask layers should be blended.
+
+**SEO:**
+The `-webkit-mask-composite` property and its usage have no direct impact on SEO, as it's primarily a styling property that affects the visual appearance of the element.
+
+**Additional Notes:**
+- `-webkit-mask-composite` is specific to WebKit-based browsers like Safari and is not part of the CSS standard.
+- The property is used in conjunction with `-webkit-mask-box-image` and other mask-related properties to create complex masking effects.
+
+**Browser Support:**
+The `-webkit-mask-composite` property is supported in older versions of WebKit-based browsers like Safari. It's not supported in other modern browsers like Chrome or Firefox. When using this property, consider providing alternative styles for other browsers or using alternative techniques for broader compatibility.

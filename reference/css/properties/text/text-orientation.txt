@@ -1,0 +1,48 @@
+The CSS property `text-orientation` is used to control the orientation of text characters in a block container. It is particularly useful for vertical text layouts, such as in Asian scripts like Chinese, Japanese, or Korean, where text can be oriented vertically rather than horizontally.
+
+Here's an explanation of `text-orientation`:
+
+**What is `text-orientation`?**
+`text-orientation` is a CSS property that defines the orientation of text characters within a block container. It allows you to specify whether the text should be displayed horizontally or vertically, and it also provides options for mixing horizontal and vertical text within the same block.
+
+**Why is `text-orientation` used?**
+`text-orientation` is used to control the orientation of text in scenarios where vertical text layouts are required, such as in Asian languages. It helps maintain proper text readability and alignment when text needs to be presented vertically.
+
+**How to use `text-orientation` with examples:**
+Here are some examples of how to use `text-orientation`:
+
+1. Display text horizontally (the default behavior):
+   ```css
+   .horizontal-text {
+     text-orientation: mixed;
+   }
+   ```
+
+2. Display text vertically, from top to bottom:
+   ```css
+   .vertical-text {
+     text-orientation: upright;
+   }
+   ```
+
+3. Display text vertically, from bottom to top:
+   ```css
+   .vertical-reverse-text {
+     text-orientation: sideways;
+   }
+   ```
+
+4. Mix horizontal and vertical text within the same block:
+   ```css
+   .mixed-text {
+     text-orientation: upright mixed;
+   }
+   ```
+
+**Additional Notes:**
+- `text-orientation` is particularly useful for Asian scripts, but it can also be applied to other scenarios where vertical text layouts are required.
+- The values for `text-orientation` include "mixed," "upright," and "sideways," which control how text characters are oriented.
+- Combining values, such as "upright mixed," allows you to create hybrid layouts where some text is displayed vertically while other text remains horizontal.
+
+**Browser Support:**
+Browser support for `text-orientation` is generally good in modern browsers, but it may vary depending on the specific value used. It's essential to check the current browser compatibility when using this property, especially for scenarios involving vertical text layouts.

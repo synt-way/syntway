@@ -1,0 +1,63 @@
+The `@page` rule in CSS is used to define the style and layout of printed pages when a web page is printed or saved as a PDF. It allows web developers to customize the appearance of printed documents, including page margins, headers, footers, and other print-specific properties. The `@page` rule is particularly useful for creating well-formatted and branded printed materials from web content.
+
+Here's a detailed explanation of `@page`:
+
+**Syntax:**
+The `@page` rule is used to define print-specific styles:
+
+```css
+@page {
+  /* Print-specific styles here */
+}
+```
+
+Within the `@page` block, you can specify various properties and values to control the appearance of printed pages.
+
+**Example:**
+Let's say you want to create a print stylesheet for a web page and customize the page margins and page numbering in the footer:
+
+```css
+@page {
+  margin: 1cm; /* Set 1cm margins for all sides */
+}
+
+@page :first {
+  margin-top: 2cm; /* Increase top margin on the first page */
+}
+
+@page :left {
+  margin-left: 2cm; /* Increase left margin on left-hand pages */
+}
+
+@page :right {
+  margin-right: 2cm; /* Increase right margin on right-hand pages */
+}
+
+@page {
+  content: "Page " counter(page); /* Add page numbers to the footer */
+  text-align: center;
+  font-size: 10pt;
+}
+```
+
+In this example, we define the margins for all pages, adjust margins for the first page and left/right pages (for double-sided printing), and add page numbers to the footer.
+
+**Why Use `@page` Rule:**
+The `@page` rule is used to control the layout and appearance of printed documents generated from web content. It ensures that printed materials are well-structured, branded, and easy to read.
+
+**Where to Use `@page` Rule:**
+You should use the `@page` rule within a separate CSS stylesheet specifically designed for print. This print stylesheet is linked to the web page using the `media` attribute of the `<link>` element.
+
+**How `@page` Rule Works:**
+When a web page is printed or saved as a PDF, the browser applies the styles defined within the `@page` rule to format the printed output. These styles override the default print settings of the browser.
+
+**SEO (Search Engine Optimization) Considerations:**
+The use of `@page` rules for print styles does not have a direct impact on SEO. SEO primarily focuses on content, structure, and metadata to improve a website's search engine ranking. However, providing well-formatted print versions of web content can enhance the user experience and indirectly benefit SEO by providing a positive user interaction.
+
+**Additional Notes:**
+- `@page` rules can be quite powerful and flexible, allowing you to control page size, orientation, and various print-specific properties.
+- You can use CSS counters to add page numbering or other dynamic content to headers or footers in printed documents.
+- Keep in mind that browser support for some advanced print features may vary, so always test your print styles across different browsers to ensure consistent results.
+
+**Browser Support:**
+Support for `@page` rules is generally good in modern web browsers. However, the level of support for advanced print features may vary between browsers. It's important to test your print styles on different browsers to ensure that the printed output meets your requirements.

@@ -1,0 +1,27 @@
+The `border-block-color` property in CSS is used to set the color of the two block-level borders of an element, which are the vertical borders on the top and bottom sides.
+
+**Example:**
+```css
+.container {
+  border-block-color: #ff0000; /* Set the color of the top and bottom borders to red */
+}
+```
+
+**Why:**
+The `border-block-color` property is used to control the color of the vertical borders on the top and bottom sides of an element. It's useful when you want to apply different colors to these two sides while leaving the horizontal borders unchanged.
+
+**Where:**
+Apply the `border-block-color` property to block-level elements where you want to specify the color for the top and bottom vertical borders.
+
+**How:**
+Set the value of the `border-block-color` property to the desired color, using color keywords, hexadecimal values, RGB values, or other supported color representations.
+
+**SEO:**
+The `border-block-color` property itself doesn't have a direct impact on SEO. However, using it to enhance the visual presentation of your website's layout can contribute to a better user experience.
+
+**Additional Notes:**
+- To set different colors for the individual sides of the block-level element's border, you can use properties like `border-block-start-color` and `border-block-end-color`.
+- The `border-block-color` property is part of the Logical Properties and Values specification, which provides better support for languages that use vertical writing modes.
+
+**Browser Support:**
+The `border-block-color` property is supported in modern browsers that have implemented the Logical Properties and Values specification. This includes browsers like Chrome, Firefox, Safari, and Edge. Keep in mind that support might be limited in older versions of some browsers.

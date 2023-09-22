@@ -1,0 +1,54 @@
+The `isolation` CSS property is used to specify whether an element should create a new stacking context. Stacking context affects the way elements are layered and displayed on the z-axis within a web page. This property is often used to prevent elements within a container from affecting or being affected by elements outside that container in terms of stacking order and certain rendering properties.
+
+Here's a comprehensive explanation of the `isolation` property using the provided template:
+
+### **What is `isolation`?**
+The `isolation` property in CSS determines whether an element creates a new stacking context. Stacking contexts play a significant role in controlling how elements are positioned and layered in the z-axis within the document's rendering flow.
+
+### **Usage:**
+The syntax for using the `isolation` property is as follows:
+
+```css
+selector {
+  isolation: auto | isolate;
+}
+```
+
+Where `selector` is the target element, and the values can be either:
+- `auto`: The default value. The element does not create a new stacking context.
+- `isolate`: The element creates a new stacking context.
+
+### **Example:**
+```css
+.container {
+  isolation: isolate;
+}
+```
+
+In the example above, the elements within the `.container` element will create a new stacking context.
+
+### **Why Use `isolation`?**
+The `isolation` property is used to manage stacking contexts, allowing you to control how elements are layered and displayed in relation to each other on the z-axis. It can help prevent elements inside a container from affecting or being affected by elements outside the container.
+
+### **Where to Use `isolation`?**
+Use the `isolation` property on containers or specific elements within which you want to create a new stacking context, isolating them from the stacking context of their parent or sibling elements.
+
+### **How to Use `isolation`:**
+1. Decide whether you want to create a new stacking context for a specific element or container.
+2. Apply the `isolation` property with the appropriate value (`auto` or `isolate`) to the target element.
+
+### **Example Values:**
+- `isolation: auto;`: The element doesn't create a new stacking context (default behavior).
+- `isolation: isolate;`: The element creates a new stacking context.
+
+### **SEO Considerations:**
+The `isolation` property doesn't have a direct impact on SEO. Its primary purpose is to control rendering and layering behavior, which may indirectly affect user experience and layout presentation.
+
+### **Additional Notes:**
+- Elements with a new stacking context are positioned independently in relation to elements outside that context.
+- New stacking contexts can affect stacking order, which determines how elements are displayed in front of or behind other elements.
+
+### **Browser Support:**
+The `isolation` property is supported in modern browsers.
+
+In summary, the `isolation` CSS property is used to control whether an element creates a new stacking context, affecting how elements are layered and displayed on the z-axis. It's a useful tool for managing the visual hierarchy of elements within a web page.

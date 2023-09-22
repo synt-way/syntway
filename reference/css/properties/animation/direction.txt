@@ -1,0 +1,36 @@
+The `animation-direction` property in CSS is used to define the direction of an animation's playback. It specifies whether the animation should play forward, backward, or alternate between forward and backward. This property provides control over the order in which the animation frames are displayed.
+
+**Example:**
+```css
+.slide {
+  animation: slide 2s linear infinite alternate; /* Animation with alternate direction */
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+```
+
+**Why:**
+The `animation-direction` property is used when you want to determine whether an animation should play forward, backward, or alternate between both directions. This can create various visual effects and behaviors in animations.
+
+**Where:**
+Apply the `animation-direction` property to the element you're animating to control the direction of the animation playback.
+
+**How:**
+The `animation-direction` property accepts values such as:
+- `normal`: The animation plays forward (from the start keyframe to the end keyframe).
+- `reverse`: The animation plays backward (from the end keyframe to the start keyframe).
+- `alternate`: The animation alternates between playing forward and backward.
+- `alternate-reverse`: The animation alternates between playing backward and forward.
+
+**SEO:**
+The `animation-direction` property and animations themselves don't have a direct impact on SEO. However, animations can enhance user experience and engagement, potentially leading to longer page visits.
+
+**Additional Notes:**
+- You can combine `animation-direction` with other animation properties like `animation-name`, `animation-duration`, and `animation-timing-function` to create more complex animations.
+- Animations with alternate directions can create a "ping-pong" effect, where an element moves back and forth repeatedly.
+
+**Browser Support:**
+The `animation-direction` property is supported in modern browsers, including Chrome, Firefox, Safari, and Edge. It is widely supported and provides consistent behavior across these browsers.

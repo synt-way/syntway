@@ -1,0 +1,40 @@
+**1. What is `overflow-wrap`?**
+   - **Definition:** `overflow-wrap` is a CSS property used to specify how an element should handle word wrapping within its content when it overflows its container.
+   - **Syntax:** `overflow-wrap: value;`
+
+**2. Why Use `overflow-wrap`?**
+   - **Text Wrapping:** It allows you to control how long words or strings of characters should be handled when they reach the end of a line inside a container.
+   - **Layout Control:** Helps maintain the layout of content within a container and prevent horizontal overflow.
+
+**3. Where is `overflow-wrap` Used?**
+   - **Text Elements:** Commonly applied to text-containing elements like paragraphs, headings, and spans.
+   - **Responsive Design:** Useful for handling text that might overflow when viewed on smaller screens.
+
+**4. How to Use `overflow-wrap`?**
+   - **Example 1:** Breaking long words within a container:
+     ```css
+     p {
+       overflow-wrap: break-word;
+     }
+     ```
+
+   - **Example 2:** Avoiding word breaks:
+     ```css
+     .no-wrap {
+       overflow-wrap: normal;
+     }
+     ```
+
+**5. SEO Implications:**
+   - `overflow-wrap` itself does not have a direct impact on SEO. However, it can affect the readability and layout of content, which indirectly impacts user experience and, subsequently, SEO.
+
+**6. Additional Notes:**
+   - **Values:** Common values for `overflow-wrap` include `normal`, `break-word`, and `anywhere`.
+   - **`break-word` vs. `anywhere`:** `break-word` allows for word breaks within words or long strings, while `anywhere` allows breaking words at any point, not just spaces or hyphens.
+   - **Fallback for Older Browsers:** In some cases, you may need to provide fallback styles for older browsers that do not support this property.
+
+**7. Browser Support:**
+   - `overflow-wrap` is widely supported in modern web browsers, including Chrome, Firefox, Safari, and Edge.
+   - It is part of the CSS3 specification.
+
+In summary, `overflow-wrap` is a CSS property used to control how text content should wrap within its container, especially when it overflows. It is important for maintaining text layout and readability. While it doesn't have a direct SEO impact, it plays a crucial role in enhancing user experience by preventing text overflow and is widely supported in modern browsers.

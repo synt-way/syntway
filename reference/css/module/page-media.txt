@@ -1,0 +1,51 @@
+**CSS Paged Media**
+
+**What:**
+CSS Paged Media refers to the set of CSS properties and features that are used to control the appearance and layout of content for print and other paged media, such as PDFs. It allows you to style the presentation of content when it's printed or formatted for page-oriented media.
+
+**Example:**
+Here's an example of using CSS Paged Media to define page breaks and margins for printing:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  @page {
+    size: A4;
+    margin: 2cm;
+  }
+
+  body {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<p>This is content for the first page.</p>
+<div class="page-break"></div>
+<p>This is content for the second page.</p>
+
+</body>
+</html>
+```
+
+**Why:**
+CSS Paged Media is used to create consistent and visually appealing layouts for printed documents or content that will be consumed as paged media. It allows you to customize margins, page sizes, page breaks, and other print-specific styles.
+
+**Where:**
+CSS Paged Media is applicable whenever you need to generate content for print, such as articles, reports, books, and other printed materials.
+
+**How:**
+Use the `@page` rule to define the properties of a printed page, and use properties like `size`, `margin`, and `page-break-*` to control the layout and appearance of content when it's printed.
+
+**SEO:**
+CSS Paged Media doesn't directly impact SEO for online content. However, it's essential for creating well-formatted and visually appealing printed materials, which can indirectly contribute to a professional image for your brand or content.
+
+**Additional Notes:**
+- Test your paged media styles by generating print previews in different browsers to ensure proper rendering.
+- Some CSS properties that are relevant for screen display might not work the same way in print, so be prepared to adjust your styles accordingly.
+
+**Browser Support:**
+CSS Paged Media properties are supported by modern browsers, especially when generating print stylesheets. However, the level of support for specific properties might vary. Always test your paged media styles across different browsers to ensure consistent layout and appearance.

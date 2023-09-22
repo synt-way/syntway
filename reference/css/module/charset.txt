@@ -1,0 +1,43 @@
+**CSS Character Encoding (Charsets)**
+
+**What:**
+In CSS, character encoding (charsets) refers to specifying how the characters in your stylesheet are encoded and interpreted. It ensures that browsers correctly understand and render characters from different languages and character sets.
+
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  body {
+    font-family: "Arial", sans-serif;
+  }
+</style>
+</head>
+<body>
+<h1>Hello, 你好, مرحبا</h1>
+</body>
+</html>
+```
+
+**Why:**
+Character encoding is important to ensure that your web content displays correctly for users across different languages and regions. Specifying the appropriate character encoding prevents rendering issues where special characters or characters from various languages might appear as garbled or incorrect symbols.
+
+**Where:**
+Character encoding is applied to the entire HTML document and any external stylesheets or scripts.
+
+**How:**
+- Specify the character encoding for your HTML document using the `<meta>` tag with the `charset` attribute.
+- Ensure that your stylesheets and scripts are saved using the same character encoding as the HTML document to maintain consistency.
+
+**SEO:**
+Character encoding primarily impacts the proper display of characters on your website. It doesn't have a direct impact on SEO. However, if characters are incorrectly displayed due to encoding issues, it can negatively affect user experience, potentially leading to higher bounce rates.
+
+**Additional Notes:**
+- The most commonly used character encoding for web content is UTF-8, which supports a wide range of characters from different languages and scripts.
+- Be consistent with your character encoding settings across all your web assets (HTML, CSS, JavaScript) to avoid conflicts and display issues.
+- If you're working with content in languages with characters outside the ASCII range, ensure that your text editor, content management system, and server configuration are set to handle the chosen character encoding.
+
+**Browser Support:**
+Modern browsers are generally well-equipped to handle various character encodings, including UTF-8. It's recommended to use UTF-8 encoding to ensure compatibility with different browsers and devices. Always check the encoding settings in different browsers to confirm that characters are displayed correctly.

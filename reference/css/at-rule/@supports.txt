@@ -1,0 +1,49 @@
+The `@supports` rule in CSS is used to check whether a browser supports a particular CSS property and its associated value or a CSS feature. It allows web developers to conditionally apply styles based on the browser's capabilities, ensuring graceful degradation and progressive enhancement in their web designs.
+
+Here's a detailed explanation of `@supports`:
+
+**Syntax:**
+The `@supports` rule is used to conditionally apply styles:
+
+```css
+@supports (condition) {
+  /* Styles to apply if the condition is true */
+}
+```
+
+- `condition`: Specifies the condition you want to check. It typically involves a CSS property and value that you want to test for browser support.
+
+**Example:**
+Let's say you want to apply a CSS rule only if the browser supports the `grid` layout system. You can use the `@supports` rule like this:
+
+```css
+/* Apply styles for browsers that support CSS Grid */
+@supports (display: grid) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+```
+
+In this example, the styles inside the `@supports` block are applied only if the browser supports the `display: grid` property and value.
+
+**Why Use `@supports` Rule:**
+The `@supports` rule is used to create more robust and cross-browser-compatible styles by applying CSS rules conditionally based on the browser's capabilities. It ensures that styles are applied only when supported, preventing potential rendering issues in unsupported browsers.
+
+**Where to Use `@supports` Rule:**
+You should use the `@supports` rule within your CSS stylesheet to conditionally apply styles based on feature support. It is often used in combination with other CSS properties to create responsive and adaptive designs.
+
+**How `@supports` Rule Works:**
+When a browser encounters the `@supports` rule, it evaluates the condition specified within the parentheses. If the condition is true (i.e., the browser supports the specified feature), the styles within the `@supports` block are applied. If the condition is false, the styles are ignored.
+
+**SEO (Search Engine Optimization) Considerations:**
+The use of the `@supports` rule does not have a direct impact on SEO. SEO primarily focuses on content, structure, and metadata to improve a website's search engine ranking. However, ensuring that your website is visually consistent across browsers can indirectly benefit SEO by providing a better user experience.
+
+**Additional Notes:**
+- The `@supports` rule is a powerful tool for progressive enhancement and graceful degradation in web design, allowing you to tailor styles to different browser capabilities.
+- You can use logical operators like `and`, `or`, and `not` to create more complex conditions within `@supports`.
+- Always include a fallback style declaration outside of the `@supports` block to ensure that browsers without support for the feature still receive some styling.
+
+**Browser Support:**
+Support for the `@supports` rule is widespread and well-supported in modern web browsers, including Chrome, Firefox, Safari, Edge, and Internet Explorer 11 and later. It is considered a standard CSS feature and is an essential part of creating responsive and adaptable web designs. Compatibility may vary for specific properties or values, so it's important to test your `@supports` conditions across different browsers to ensure consistent behavior.

@@ -1,0 +1,51 @@
+The `grid-row` CSS property is a shorthand property used within a grid layout to specify both the starting and ending grid row lines for a grid item. It allows you to control the row placement and span of grid items within a grid container.
+
+Here's a comprehensive explanation of the `grid-row` property using the provided template:
+
+### **What is `grid-row`?**
+The `grid-row` property in CSS is a shorthand property used to specify the starting and ending grid row lines for a grid item within a grid container. It sets both the `grid-row-start` and `grid-row-end` properties simultaneously.
+
+### **Usage:**
+The syntax for using the `grid-row` property is as follows:
+
+```css
+selector {
+  grid-row: start / end;
+}
+```
+
+Where `selector` is the target grid item, `start` is the grid row line where the item starts, and `end` is the grid row line where the item ends.
+
+### **Example:**
+```css
+.item {
+  grid-row: 2 / 4;
+}
+```
+
+In the example above, the `.item` starts at the second row line and ends at the fourth row line within the grid.
+
+### **Why Use `grid-row`?**
+The `grid-row` property simplifies the process of specifying the placement and span of grid items along the row axis within a grid layout.
+
+### **Where to Use `grid-row`?**
+Use the `grid-row` property on grid items within a grid container when you want to control the row placement and span of the items.
+
+### **How to Use `grid-row`:**
+1. Determine the desired starting and ending row lines for the grid item.
+2. Apply the `grid-row` property to the grid item, specifying the start and end values.
+
+### **Example Values:**
+- `grid-row: 2 / 4`: The item starts at the second row line and ends at the fourth row line.
+- `grid-row: span 3 / span 2`: The item starts from its current row position and spans 3 rows.
+
+### **SEO Considerations:**
+The `grid-row` property itself doesn't have a direct impact on SEO. However, using it to create organized and visually appealing layouts can enhance user experience, indirectly contributing to SEO.
+
+### **Additional Notes:**
+- **Grid Units**: Row lines can be specified using grid line numbers or by using named lines defined in `grid-template-rows`.
+
+### **Browser Support:**
+The `grid-row` property is supported in modern browsers that also support CSS Grid Layout.
+
+In summary, the `grid-row` CSS property simplifies the process of controlling the row placement and span of grid items within a grid layout. It's an important tool for creating flexible and responsive grid-based designs.

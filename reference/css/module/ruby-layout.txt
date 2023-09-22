@@ -1,0 +1,48 @@
+**CSS Ruby Layout**
+
+**What:**
+CSS Ruby Layout is a feature used for adding annotations or phonetic guides to Asian text, such as Chinese, Japanese, and Korean. It allows you to position ruby text (small annotations) above or below the main text to provide pronunciation assistance or additional information.
+
+**Example:**
+Here's an example of using CSS Ruby Layout to display ruby text above the main text:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  ruby {
+    display: ruby;
+  }
+
+  rt {
+    display: ruby-text;
+  }
+</style>
+</head>
+<body>
+
+<p><ruby>漢<rt>かん</rt></ruby>字 means "kanji".</p>
+
+</body>
+</html>
+```
+
+**Why:**
+CSS Ruby Layout is used to provide phonetic guides, pronunciation assistance, translations, or additional information alongside Asian characters in a visually aligned manner.
+
+**Where:**
+CSS Ruby Layout is applicable when dealing with languages that use characters with multiple readings or when providing additional information next to text.
+
+**How:**
+Use the `ruby` element to enclose the base text, and use the `rt` element to enclose the ruby text (annotations). Apply the `display` property values `ruby` and `ruby-text` to style the layout.
+
+**SEO:**
+CSS Ruby Layout is used mainly for stylistic and typographic purposes. While it might improve the user experience for certain audiences, its direct impact on SEO is minimal.
+
+**Additional Notes:**
+- Use CSS for styling the ruby layout, but ensure that the content itself is provided in a semantically meaningful way.
+- Consider browser support and ensure that your layout degrades gracefully on browsers with limited support.
+
+**Browser Support:**
+CSS Ruby Layout is supported by modern browsers. However, not all browsers might fully support ruby annotations, and the visual rendering might vary. Always test your ruby layouts on different browsers to ensure consistent behavior.

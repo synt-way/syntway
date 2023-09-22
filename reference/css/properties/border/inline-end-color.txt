@@ -1,0 +1,20 @@
+As of my last update in September 2021, the property `border-inline-end-color` is not a standard CSS property. However, it seems like you might be looking for a way to apply a specific border color to the end of an inline element.
+
+If you're trying to achieve a custom visual effect using a border-like element at the end of an inline element, you might consider using pseudo-elements like `::after` to create that effect.
+
+Here's a simplified example:
+
+```css
+/* Apply a colored "border" at the end of an inline element */
+.inline-end-border::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  background-color: blue; /* Set the desired color */
+}
+```
+
+In this example, the `::after` pseudo-element is used to add a blue horizontal line that could be perceived as an "end border" to the inline element with the class `.inline-end-border`.
+
+Remember that CSS capabilities can evolve, and there may have been new features introduced after September 2021. Always refer to the latest CSS specifications or resources like MDN Web Docs for the most accurate and up-to-date information.

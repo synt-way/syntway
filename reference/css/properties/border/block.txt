@@ -1,0 +1,32 @@
+The `border-block` property in CSS is a shorthand property used to set the width, style, and color of the two block-level borders of an element, which are the vertical borders on the top and bottom sides.
+
+**Example:**
+```css
+.container {
+  border-block: 2px solid #000; /* Set a black solid border on the top and bottom sides with a width of 2 pixels */
+}
+```
+
+**Why:**
+The `border-block` property is used to specifically target and style the vertical borders on the top and bottom sides of an element. It's useful when you want to apply consistent border styling to these two sides while leaving the horizontal borders unchanged.
+
+**Where:**
+Apply the `border-block` property to block-level elements where you want to set the styling for the top and bottom vertical borders.
+
+**How:**
+The `border-block` property has three parts that can be specified in any order:
+1. Border width: Defines the width of the border in pixels, ems, rems, percentages, etc.
+2. Border style: Specifies the style of the border (e.g., solid, dashed, dotted, etc.).
+3. Border color: Sets the color of the border.
+
+You can use any combination of these parts to define the appearance of the top and bottom borders.
+
+**SEO:**
+The `border-block` property itself doesn't have a direct impact on SEO. However, using borders to visually structure content can contribute to a better user experience.
+
+**Additional Notes:**
+- To set different styles, widths, and colors for the individual sides of the block-level element's border, you can use properties like `border-block-start` and `border-block-end`.
+- The `border-block` property is part of the Logical Properties and Values specification, which provides better support for languages that use vertical writing modes.
+
+**Browser Support:**
+The `border-block` property is supported in modern browsers that have implemented the Logical Properties and Values specification. This includes browsers like Chrome, Firefox, Safari, and Edge. Keep in mind that support might be limited in older versions of some browsers.

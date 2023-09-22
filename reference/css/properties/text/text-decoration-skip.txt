@@ -1,0 +1,32 @@
+As of my last knowledge update in September 2021, the CSS property `text-decoration-skip` was not widely supported in most browsers, and its usage was limited. However, I'll provide an explanation and example based on the property's intended functionality.
+
+**What is `text-decoration-skip`?**
+`text-decoration-skip` is a CSS property that allows you to control which parts of an element's text content should be skipped when rendering text decorations such as underlines, overlines, or line-throughs. It determines how text decorations interact with elements like descenders, leading to more visually appealing and readable text.
+
+**Why is `text-decoration-skip` used?**
+`text-decoration-skip` is used to improve the visual appearance of text by controlling how text decorations interact with the text's characters. It helps prevent text decorations from overlapping or intersecting with certain parts of the text, such as descenders, which are the parts of letters that extend below the baseline (e.g., the tail of the letter "g").
+
+**Where is `text-decoration-skip` applied?**
+You can apply the `text-decoration-skip` property to various HTML elements that contain text content, such as `<a>`, `<p>`, `<span>`, and others. However, due to limited browser support, it may not be widely used.
+
+**How to use `text-decoration-skip` with examples:**
+Here's an example of how `text-decoration-skip` might be used, even though support may be limited:
+
+```css
+.text-with-skip {
+  text-decoration: underline;
+  text-decoration-skip: spaces; /* Skip spaces when rendering underline */
+}
+```
+
+In this example, the `text-decoration-skip` property is set to "spaces," which means that spaces between words should not be underlined.
+
+**SEO implications:**
+As of my last knowledge update, `text-decoration-skip` had no direct impact on SEO (Search Engine Optimization). SEO primarily involves optimizing content, meta tags, and other factors to improve a website's visibility in search engine results. This property is primarily used for visual styling and does not affect the underlying content or SEO.
+
+**Additional Notes:**
+- `text-decoration-skip` can accept values such as "none," "objects," "spaces," and "ink," which control which parts of the text to skip when rendering text decorations.
+- Properly utilizing `text-decoration-skip` can improve the legibility of text with decorations, particularly in situations where text decorations might otherwise obscure important parts of the text.
+
+**Browser Support:**
+As mentioned earlier, browser support for `text-decoration-skip` was limited as of my last knowledge update in September 2021. It was not widely supported in most browsers, and its usage was not recommended for production websites without considering fallback styles. To determine the current browser support for this property, you should consult up-to-date CSS compatibility resources.

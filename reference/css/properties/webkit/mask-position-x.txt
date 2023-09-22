@@ -1,0 +1,43 @@
+The `-webkit-mask-position-x` property is a non-standard CSS property used in older versions of WebKit-based browsers (such as Safari) to control the horizontal positioning of a mask image applied to an element. This property was part of a set of `-webkit-mask` properties used to define mask images and their properties. However, as of my last knowledge update in September 2021, these properties are still supported in WebKit-based browsers like Safari, but they're not part of the CSS standard and are not supported in other modern browsers like Chrome or Firefox.
+
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .masked-element {
+    width: 200px;
+    height: 200px;
+    background-image: url('content-image.png');
+    -webkit-mask-image: url('mask-image.png'); /* Set the mask image */
+    -webkit-mask-position-x: 50px; /* Set the horizontal position of the mask */
+  }
+</style>
+</head>
+<body>
+
+<div class="masked-element"></div>
+
+</body>
+</html>
+```
+
+**Why:**
+The `-webkit-mask-position-x` property was used to control the horizontal positioning of a mask image applied to an element. It allowed developers to precisely position the mask image on the element.
+
+**Where:**
+In the context of its historical usage, the `-webkit-mask-position-x` property could be applied to elements with a mask image to control its horizontal positioning.
+
+**How:**
+The `-webkit-mask-position-x` property allowed you to specify a length value (such as pixels) to determine the horizontal position of the mask image.
+
+**SEO:**
+The `-webkit-mask-position-x` property and its usage have no direct impact on SEO, as it's primarily a styling property that affects the visual appearance of the element.
+
+**Additional Notes:**
+- `-webkit-mask-position-x` is specific to WebKit-based browsers like Safari and is not part of the CSS standard.
+- The property is used in conjunction with other `-webkit-mask` properties to create masking effects.
+
+**Browser Support:**
+The `-webkit-mask-position-x` property is supported in older versions of WebKit-based browsers like Safari. It's not supported in other modern browsers like Chrome or Firefox. When using these properties, consider providing alternative styles for other browsers or using alternative techniques for broader compatibility.
