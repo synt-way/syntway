@@ -10,8 +10,8 @@ import {
   addAccordionAttributes,
   appendAppropriateContent,
   AccordionItem,
-  createAccordionItems, 
-  prettyprint
+  createAccordionItems//, 
+//  prettyprint
 } from '../index.js';  // Replace 'your-file-path' with the actual file path
 
 // Call the functions
@@ -24,4 +24,4 @@ appendAppropriateContent();
 createAccordionItems(itemsData); // Pass the itemsData to createAccordionItems function
 
 // Call prettyprint after content is loaded
-document.addEventListener('DOMContentLoaded', prettyprint);
+//document.addEventListener('DOMContentLoaded', prettyprint);
