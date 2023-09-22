@@ -184,7 +184,7 @@ export class AccordionItem {
     // nav elements 
     this.navItems.forEach((item, index) => {
       const navItem = document.createElement('li');
-      navItem.classList.add('nav-item');
+      navItem.classList.add('nav-item', 'border-bottom');
 
       const navLink = document.createElement('a');
       navLink.classList.add('nav-link');
@@ -207,7 +207,7 @@ export class AccordionItem {
     this.content.forEach((item, index) => {
       // Create section element
       const element = document.createElement('section');
-      element.classList.add('carousel-item', 'section', index === 0 ? 'active' : 'na');
+      element.classList.add('carousel-item', 'section');
 
       // fetch.txt file and 
       fetch(item)
@@ -225,6 +225,10 @@ export class AccordionItem {
       // Append the section element to .carousel-inner
       let carouselInner = document.querySelector('.carousel-inner');
       carouselInner.appendChild(element);
+
+       //add class active content
+      let section = document.querySelectorAll('.carousel-item');
+      section[0].classList.toggle('active');
       
       return item;
     });
