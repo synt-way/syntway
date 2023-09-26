@@ -22,7 +22,14 @@
     .active-section {
       color: #00f;
     }
-    .section p, li {
+    .section li {
         color: black !important;
         display: contents !important;
+        font-weight: normal;
+    }
+    .section p {
+      color: black !important;
+    }
+    strong::before {
+      content: ###;
     }
