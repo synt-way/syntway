@@ -22,14 +22,15 @@
     .active-section {
       color: #00f;
     }
-    .section li {
+    li {
         color: black !important;
         display: contents !important;
         font-weight: normal !important;
+        padding: 0 !important;
     }
-    .section p {
+    p {
       color: black !important;
     }
     strong::after {
-      content: "<br>" !important;
+      content: <br> !important;
     }
