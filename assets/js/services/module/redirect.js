@@ -20,10 +20,10 @@ export function redirectEducation() {
             redirect('https://getbootstrap.com/docs/5.3/getting-started/introduction/', "_blank");
             break;
           default:
-            //console.log('Condition not match');
+            console.log('Condition not match');
             break;
         }
       }
     }
   }
-// redirectEducation();
+ redirectEducation();
