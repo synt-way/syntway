@@ -25,11 +25,11 @@
     .section li {
         color: black !important;
         display: contents !important;
-        font-weight: normal;
+        font-weight: normal !important;
     }
     .section p {
       color: black !important;
     }
-    strong::before {
-      content: ###;
+    strong::after {
+      content: "<br>" !important;
     }
