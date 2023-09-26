@@ -6,7 +6,7 @@ export let educationLinkHTML = `
     <div class="card shadow text-center h-100">
       <div class="card-body h-card">
         <i class="fab fa-html5 fa-2x mb-3"></i>
-        <a href="./markup.html"><h5 class="card-title">HTML</h5></a>
+        <h5 class="card-title">HTML</h5>
         <p class="card-text">Building web pages with HTML's structured markup language.</p>
       </div>
     </div>
