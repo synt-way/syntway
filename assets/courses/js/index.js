@@ -176,7 +176,7 @@ export class AccordionItem {
     accordionCollapse.dataset.bsParent = '#faqAccordion';
 
     const accordionBody = document.createElement('div');
-    accordionBody.classList.add('accordion-body', 'p-2');
+    accordionBody.classList.add('accordion-body', 'p-2', 'overflow-auto');
 
     const navList = document.createElement('ul');
     navList.classList.add('nav', 'flex-column');
