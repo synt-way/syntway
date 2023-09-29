@@ -1,5 +1,5 @@
 // Import itemsData from the 'your-file-path' file
-import { itemsData } from './module/cascade.js';
+import { itemsData } from './cascade.js';
 
 // Import other components and functions
 import {
