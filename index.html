@@ -1,69 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Syntway</title>
-  
-  <!-- Favicons -->
-  <link href="assets/img/logo.png" rel="icon">
-  <link href="assets/img/logo.png" rel="apple-touch-icon">
-  
-  <!-- bootstrap icon cdn --> 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  
-  <!-- header bootstrap cdn -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  
-  <!-- FontAwesome icon cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  
-  <!-- Custom Index.css file -->
-  <link rel="stylesheet" href="./assets/css/Index.css">
-  <!-- Custom home.css file -->
-  <link rel="stylesheet" href="./assets/css/home/home.css">
-  
+   <!-- meta data -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Syntway</title>
+
+   <!-- favicon -->
+   <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+   <link rel="apple-touch-icon" href="assets/img/logo.png">
+
+   <!-- node_module css file -->
+
+   <!-- <link rel="stylesheet" href="./assets/node_modules/google.font/index.css"> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/1.2.3/css/glightbox.min.css">
+   <link rel="stylesheet" href="./assets/node_modules/swiper/swiper-bundle.min.css">
+
+   <!-- custom css file -->
+   <link rel="stylesheet" href="./assets/css/style.css">
+   
 </head>
 <body>
-  <!-- Start body container -->
-  <div class="body-container">
-    <!-- Start Header section -->
-    <header class="header sticky-top bg-light"></header>
 
-    <!-- Start carousel section -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel"></div>
-    
-    <!-- add dynamically main content -->
-    <main class="container-fluid">
+   <!-- ======= Hero Section ======= -->
+  <section id="hero">
+   <div class="hero-container vh-100">
+     <div class="hero-logo" data-aos="fade-down" data-aos-duration="2000">
+       <img class="" src="assets/img/logo.png" alt="Syntway" width="100" height="100">
+     </div>
+     <h1 data-aos="fade-down">Welcome to Syntway</h1>
+     <h4 data-aos="zoom-in">
+       Syntway is a leading software company <br>with expertise in revolutionizing educational systems <br>and delivering advanced web development <br>services.
+     </h4>
+     <h3 data-aos="fade-up">We create <span class="typed" data-typed-items="beautiful graphics, functional websites, working mobile apps"></span></h3>
+     <div class="actions" data-aos="fade-up">
+       <a href="./signin.html" data-aos="fade-left" class="btn btn-outline-primary">Sign in</a>
+       <a href="./signup.html" data-aos="fade-right" class="btn btn-outline-success">Sign up</a>
+     </div>
+   </div>
+ </section>
+ <!-- End Hero -->
+<!-- navbar section start -->
+ <nav class="sticky-top navbar navbar-expand-md bg-black" aria-label="Offcanvas navbar large">
+   <div class="container-fluid">
+      <!-- logo and branding -->
+      <!-- <img src="assets/img/logo.png" alt="" width="40" height="40" class="img-fluid"> -->
+      <a class="navbar-brand" href="./">Syntway</a>
       
-      <!-- Start about us section -->
-      <section class="about-us py-3"></section>
-      
-      <!-- Start why choose us section -->
-      <section class="why-choose-us"></section>
-      
-      <!-- Start Our services section -->
-      <section class="services py-3"></section>
-      
-      <!-- Start contact us section -->
-      <section class="contact-us py-3"></section>
-      
-    </main>
-    
-    <!-- Start Footer -->
-    <footer class="footer"></footer>
-  <!-- End body container -->
-  </div>
+      <!-- toggler button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+         <i class="bi mobile-nav-toggle bi-list"></i>
+      </button>
 
-  <!-- header bootstrap and jquery cdn -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Custom script file -->
-  <script type="module" src="./assets/js/Index.js"></script>
-  <script type="module" src="./assets/js/home/home.js"></script>
-  <script>
+      <!-- navbar body -->
+      <div class="offcanvas offcanvas-end text-bg-dark bg-black" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+         
+         <!-- Offcanvas header -->
+         <div class="offcanvas-header py-2">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">SYNTWAY</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+         </div>
+
+         <!-- navbar items -->
+         <div class="offcanvas-body pt-0">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+               <li class="nav-item">
+                  <a class="nav-link" href="./">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="./services.html">Services</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="./learning.html">Learning</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="https://synt-way.github.io/portfolio/" target="_blank">Portfolio</a>
+               </li>
+               <!-- <li class="nav-item">
+                  <a class="nav-link" href="./demo.php" target="_blank">Demo</a>
+               </li> -->
+               <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+               </li>
+
+               <!-- social icons -->
+               <div class="nav-link social-icon">
+                  <a href="https://twitter.com/synt_way" class="twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100093432069582" class="facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.linkedin.com/in/syntway" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://github.com/synt-way" class="github"><i class="bi bi-github"></i></a>
+               </div>   
+            </ul>
+         </div>
+      </div>
+   </div>
+  </nav>
+  <!-- End navbar section -->
   
-  </script>
+  <!-- About section -->
+   <div class="container-fluid pt-4 pb-2" id="about">
+      <div class="row py-2">
+         <div class="col-md-6 text-center" data-aos="fade-up-left">
+            <h1 class="web-title">About Us</h1>
+            <p>Syntway is an Software company specializing in the education system and web development services. We are
+               passionate about leveraging technology to transform the educational landscape and provide cutting-edge web
+               solutions.</p>
+         </div>
+
+         <div class="col-md-6 text-center" data-aos="fade-up-right">
+            <h1 class="web-title">Our Mission</h1>
+            <p>Our mission is to empower educational institutions with innovative technologies that enhance the learning
+               experience. We strive to deliver exceptional web development solutions that meet our clients' unique needs
+               and drive their success.</p>
+         </div>
+      </div>
+
+      <div class="text-center container" data-aos="fade-down">
+         <h1 class="web-title">Our Services</h1>
+         <p class="">We specialize in creating innovative and customized solutions to meet the unique needs of educational institutions and businesses.We offer a comprehensive range of Education System Solutions, including Learning Management Systems (LMS), Student Information Systems (SIS), School Management Systems, Online Examination Platforms, Virtual Classrooms, and more.</p>
+      </div>
+   </div>
+
+   <!-- Why choose us section -->
+   <div class="container-fluid text-center" id="whychoose">
+      <h1 class="web-title" data-aos="fade-down">Why Choose Us</h1>
+      <div class="row">
+         <div class="col-md-4 pb-4" data-aos="fade-left"> 
+            <div class="card h-100">
+               <div class="card-body">
+                  <i class="fas fa-users fa-2x mb-3"></i>
+                  <h5 class="card-title">Experience and Expertise</h5>
+                  <p class="card-text">With years of experience in the industry, we have the expertise to deliver
+                     exceptional solutions that meet your expectations.</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4 pb-4" data-aos="zoom-in">
+            <div class="card h-100">
+               <div class="card-body">
+                  <i class="fas fa-heart fa-2x mb-3"></i>
+                  <h5 class="card-title">Customer-Centric Approach</h5>
+                  <p class="card-text">We believe in building strong relationships with our clients and providing
+                     customized solutions and outstanding customer service.</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4 pb-4" data-aos="fade-right">
+            <div class="card h-100">
+               <div class="card-body">
+                  <i class="fas fa-lightbulb fa-2x mb-3"></i>
+                  <h5 class="card-title">Innovation and Quality</h5>
+                  <p class="card-text">We stay up-to-date with the latest technologies to deliver innovative solutions
+                  that are at the forefront of the industry.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+       <!-- ======= Team Section ======= -->
+       <section id="team" class="team pt-2 pb-4">
+         <div class="container-fluid">
+   
+           <div class="text-center" data-aos="fade-down">
+             <h1 class="web-title">Team</h1>
+             <p data-aos="zoom-in" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, vero. Tenetur corporis commodi earum assumenda. Beatae soluta delectus numquam sapiente nesciunt. Saepe, eos possimus. Doloremque, suscipit eos! Expedita, placeat esse.</p>
+           </div>
+           <div class="row">
+             
+             <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-left" data-aos-duration="2000">
+               <div class="member">
+                 <img src="assets/img/team/cute.jpg" alt="" data-aos="zoom-in" data-aos-duration="2000">
+                 <div data-aos="fade-down">
+                   <h4>Walter White</h4>
+                   <span>Chief Executive Officer</span>
+                 </div>
+                 <p data-aos="zoom-in">
+                   Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+                 </p>
+                 <div class="social" data-aos="fade-up">
+                   <a href=""><i class="bi bi-twitter"></i></a>
+                   <a href=""><i class="bi bi-facebook"></i></a>
+                   <a href=""><i class="bi bi-instagram"></i></a>
+                   <a href=""><i class="bi bi-linkedin"></i></a>
+                 </div>
+               </div>
+             </div>
+   
+             <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-right" data-aos-duration="2000">
+               <div class="member">
+                 <img src="assets/img/team/cute.jpg" alt="" data-aos="zoom-in" data-aos-duration="2000">
+                 <div data-aos="fade-down">
+                   <h4>Sarah Jhinson</h4>
+                   <span>Product Manager</span>
+                 </div>
+                 <p data-aos="zoom-in">
+                   Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+                 </p>
+                 <div class="social" data-aos="fade-up">
+                   <a href=""><i class="bi bi-twitter"></i></a>
+                   <a href=""><i class="bi bi-facebook"></i></a>
+                   <a href=""><i class="bi bi-instagram"></i></a>
+                   <a href=""><i class="bi bi-linkedin"></i></a>
+                 </div>
+               </div>
+             </div>
+   
+             <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-left" data-aos-duration="2000">
+               <div class="member">
+                 <img src="assets/img/team/deepak.jpeg" alt="" data-aos="zoom-in" data-aos-duration="2000">
+                 <div data-aos="fade-down">
+                   <h4>Deepak Kumar</h4>
+                   <span>Web developer</span>
+                 </div>
+                 <p data-aos="zoom-in">
+                   I'm Deepak Kumar, the creative force behind web design and development over at Syntway. Excited to be part of the Syntway journey!
+                 </p>
+                 <div class="social" data-aos="fade-up">
+                   <a href="https://twitter.com/synt_way" class="twitter"><i class="bi bi-twitter"></i></a>
+                   <a href="https://www.facebook.com/profile.php?id=100093432069582" class="facebook"><i class="bi bi-facebook"></i></a>
+                   <a href="https://www.linkedin.com/in/syntway" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                   <a href="https://github.com/synt-way" class="github"><i class="bi bi-github"></i></a>
+                 </div>
+               </div>
+             </div>
+   
+             <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-right" data-aos-duration="2000">
+               <div class="member">
+                 <img src="assets/img/team/cute.jpg" alt="" data-aos="zoom-in" data-aos-duration="2000">
+                 <div data-aos="fade-down">
+                   <h4>Sarah Jhinson</h4>
+                   <span>Product Manager</span>
+                 </div>
+                 <p data-aos="zoom-in">
+                   Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+                 </p>
+                 <div class="social" data-aos="fade-up">
+                   <a href=""><i class="bi bi-twitter"></i></a>
+                   <a href=""><i class="bi bi-facebook"></i></a>
+                   <a href=""><i class="bi bi-instagram"></i></a>
+                   <a href=""><i class="bi bi-linkedin"></i></a>
+                 </div>
+               </div>
+             </div>
+   
+           </div>
+   
+         </div>
+       </section><!-- End Team Section -->
+   <!-- testimonial section -->
+   <section id="testimonials" class="testimonials">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="section-header text-center pb-2 container">
+          <h1 class="web-title">Testimonials</h1>
+          <p>Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eVoluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos quam</p>
+        </div>
+
+        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <div class="d-flex align-items-center">
+                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0" alt="">
+                    <div> 
+                      <h3>Saul Goodman</h3>
+                      <h4>Ceo &amp; Founder</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <div class="d-flex align-items-center">
+                    <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt="">
+                    <div>
+                      <h3>Sara Wilsson</h3>
+                      <h4>Designer</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <div class="d-flex align-items-center">
+                    <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0" alt="">
+                    <div>
+                      <h3>Jena Karlis</h3>
+                      <h4>Store Owner</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <div class="d-flex align-items-center">
+                    <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0" alt="">
+                    <div>
+                      <h3>Matt Brandon</h3>
+                      <h4>Freelancer</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <div class="d-flex align-items-center">
+                    <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0" alt="">
+                    <div>
+                      <h3>John Larson</h3>
+                      <h4>Entrepreneur</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+   </section><!-- End Testimonials Section -->
+
+   <!-- footer section -->
+   <footer id="footer">
+
+      <div class="footer-top bg-black pt-5">
+         <div class="container-fluid bg-black">
+               <div class="row">
+
+                  <div class="col-lg-2 col-md-4 footer-contact">
+                     <h3 data-aos="fade-right">Syntway</h3>
+                     <p data-aos="fade-right" class="mb-3">
+                        Chak babullapur mohkam <br>
+                        Khaga Fatehpur UP <br>
+                        India - 212655 <br>
+                     </p>
+                     <div data-aos="fade-right">
+                        <strong>Phone:</strong> <a href="tel:+918948263861">+91 89482-63861</a><br>
+                        <strong>Email:</strong> <a href="mailto:synt.way@gmail.com">synt.way@gmail.com</a><br>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 footer-links">
+                     <h4 data-aos="fade-right">Useful Links</h4>
+                     <ul data-aos="fade-right">
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="./">Home</a></li>
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="./about.html">About us</a></li>
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="./services.html">Services</a></li>
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="./terms.html">Terms of service</a></li>
+                        <li><i class="bi bi-chevron-right"></i></i> <a href="./privacy.html">Privacy policy</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 footer-links">
+                     <h4 data-aos="fade-right">Services</h4>
+                     <ul data-aos="fade-right">
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Web Development</a></li>
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Web Design</a></li>
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Product Management</a></li>
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Marketing</a></li>
+                        <li><i class="bi bi-chevron-right"></i></i> <a href="#">Graphic Design</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 footer-links">
+                     <h4 data-aos="fade-right">Learning </h4>
+                     <ul data-aos="fade-right">
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Home</a></li>
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">About us</a></li>
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Services</a></li>
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Terms of service</a></li>
+                        <li><i class="bi bi-chevron-right"></i></i> <a href="#">Privacy policy</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 footer-links">
+                     <h4 data-aos="fade-right">Management</h4>
+                     <ul data-aos="fade-right">
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Web Design</a></li>
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Web Development</a></li>
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Product Management</a></li>
+                        <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Marketing</a></li>
+                        <li><i class="bi bi-chevron-right"></i></i> <a href="#">Graphic Design</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 footer-newsletter">
+                     <h4 data-aos="fade-right">Join Our Newsletter</h4>
+                     <p data-aos="fade-right">Innovative solutions define our cutting-edge software company. Join our journey!</p>
+                     <form action="" method="post" data-aos="fade-right">
+                        <input type="email" name="email" placeholder="E-mail address">
+                        <input type="submit" value="Join">
+                     </form>
+                  </div>
+
+               </div>
+            </div>
+            </div>
+
+            <div class="container-fluid d-md-flex py-3 bg-black">
+
+               <div class="me-md-auto text-center text-md-start">
+                  <div class="copyright">
+                     <span>&COPY; Copyright <strong>Syntway</strong>. All Rights Reserved</span>
+                  </div>
+                  <!-- <div class="credits">
+                     Designed by <a href="https://syntway.org/">Syntway</a>
+                  </div> -->
+               </div>
+               <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                  <a href="https://twitter.com/synt_way" class="twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100093432069582" class="facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="https://g.dev/syntway" class="google"><i class="bi bi-google"></i></a>
+                  <a href="https://www.linkedin.com/in/syntway" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://github.com/synt-way" class="github"><i class="bi bi-github"></i></a>
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+   </footer>
+   <!-- End footer section -->
+   
+   <!-- node_module js file -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/1.2.3/js/glightbox.min.js"></script>
+   <script src="./assets/node_modules/swiper/swiper-bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/php-email-form/3.2.1/validate.min.js"></script>
+   
+   <!-- custom js file -->
+   <script type="module" src="./assets/js/script.js"></script>
 </body>
 </html>

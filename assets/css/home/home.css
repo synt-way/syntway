@@ -1,7 +1,0 @@
-/* import './bundle' folder to all files */
-
-/* import carousel.css file */
-@import url('./bundle/carousel.css');
-
-/* import about.css file */
-@import url('./bundle/about.css');

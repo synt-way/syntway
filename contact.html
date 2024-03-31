@@ -1,75 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Syntway</title>
-  
-    <!-- Favicons -->
-  <link href="assets/img/logo.png" rel="icon">
-  <link href="assets/img/logo.png" rel="apple-touch-icon">
-  
-  <!-- Include Bootstrap CSS for FAQ -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <!-- bootstrap icon cdn --> 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  
-  <!-- header bootstrap cdn -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  
-  <!-- FontAwesome icon cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  
-  <!-- Custom Index.css file -->
-  <link rel="stylesheet" href="./assets/css/Index.css">
-  
-  <!-- write Coding for debug faq and toggler section -->
-  <style>
-    .navbar-toggler:focus {
-      outline: 2px solid black !important;
-      outline-offset: -2px !important;
-      box-shadow: none !important; 
-    }
-    .accordion-button:focus {
-      box-shadow: none !important; 
-    }
-  </style>
+   <!-- meta data -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Syntway</title>
+
+   <!-- favicon -->
+   <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+   <link rel="apple-touch-icon" href="assets/img/logo.png">
+
+   <!-- node_module css file -->
+
+   <!-- <link rel="stylesheet" href="./assets/node_modules/google.font/index.css"> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/1.2.3/css/glightbox.min.css">
+   <link rel="stylesheet" href="./assets/node_modules/swiper/swiper-bundle.min.css">
+
+   <!-- custom css file -->
+   <link rel="stylesheet" href="./assets/css/style.css">
+   
 </head>
 <body>
-  <!-- Start body container -->
-  <div class="body-container">
-    <!-- Start Header -->
-    <header class="header sticky-top bg-light"></header>
-    
-    <!-- add dynamically main content -->
-    <main class="container-fluid">
-      <!-- FAQ coding start -->
-      <section class="faq py-3"></section>
+   <!-- navbar section start -->
+ <nav class="sticky-top navbar navbar-expand-md bg-black" aria-label="Offcanvas navbar large">
+   <div class="container-fluid">
+      <!-- logo and branding -->
+      <!-- <img src="assets/img/logo.png" alt="" width="40" height="40" class="img-fluid"> -->
+      <a class="navbar-brand" href="./">Syntway</a>
       
-      <!-- Start contact us section -->
-      <section class="contact-us py-3"></section>
-      
-    </main>
-    
-    <!-- Start Footer -->
-    <footer class="footer"></footer>
-  <!-- End body container -->
-  </div>
-  <!-- Include Bootstrap JS (Popper.js and Bootstrap's JavaScript) for  FAQ -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-  <!-- header bootstrap and jquery cdn -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Custom script file -->
-  <script type="module" src="./assets/js/Index.js"></script>
-  <script type="module" src="./assets/js/contact/contact.js"></script>
+      <!-- toggler button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+         <i class="bi mobile-nav-toggle bi-list"></i>
+      </button>
+
+      <!-- navbar body -->
+      <div class="offcanvas offcanvas-end text-bg-dark bg-black" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+         
+         <!-- Offcanvas header -->
+         <div class="offcanvas-header py-2">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">SYNTWAY</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+         </div>
+
+         <!-- navbar items -->
+         <div class="offcanvas-body pt-0">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+               <li class="nav-item">
+                  <a class="nav-link" href="./">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="./services.html">Services</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="./learning.html">Learning</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="https://synt-way.github.io/portfolio/" target="_blank">Portfolio</a>
+               </li>
+               <!-- <li class="nav-item">
+                  <a class="nav-link" href="./demo.php" target="_blank">Demo</a>
+               </li> -->
+               <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+               </li>
+
+               <!-- social icons -->
+               <div class="nav-link social-icon">
+                  <a href="https://twitter.com/synt_way" class="twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100093432069582" class="facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.linkedin.com/in/syntway" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://github.com/synt-way" class="github"><i class="bi bi-github"></i></a>
+               </div>   
+            </ul>
+         </div>
+      </div>
+   </div>
+  </nav>
+  <!-- End navbar section -->
   
-  <script>
-    let active= document.querySelector('.navbar-toggler');
+  <main id="faq" class="main container-fluid pt-4">
     
-  </script>
+   <h1 class="web-title text-center pb-4">Frequently Asked Questions</h1>
+ 
+   <div class="row">
+     <div class="col-md-6">
+       <!-- Basic Question -->
+       <div class="card basic" data-aos="fade-up-left">
+         <div class="card-body">
+           <h5 class="card-title">Basic Questions</h5>
+ 
+           <div>
+             <h6>1. What is Syntway?</h6>
+             <p>Syntway is a leading provider of Education System Solutions and Web Design & Development services. We specialize in creating innovative and customized solutions to meet the unique needs of educational institutions and businesses.</p>
+           </div>
+ 
+           <div class="pt-2">
+             <h6>2. What Education System Solutions do you offer?</h6>
+             <p>We offer a comprehensive range of Education System Solutions, including Learning Management Systems (LMS), Student Information Systems (SIS), School Management Systems, Online Examination Platforms, Virtual Classrooms, and more.</p>
+           </div>
+ 
+           <div class="pt-2">
+             <h6>3. Do you cater to different educational institutions?</h6>
+             <p>Yes, we cater to a wide range of educational institutions, including schools, colleges, universities, online learning platforms, corporate training centers, and other e-learning initiatives.</p>
+           </div>
+ 
+         </div>
+       </div><!-- End Basic Question -->
+ 
+       <!-- F.A.Q Group 1 -->
+       <div class="card" data-aos="fade-down-left">
+         <div class="card-body">
+           <h5 class="card-title">Our services related questions</h5>
+ 
+           <div class="accordion accordion-flush" id="faq-group-1">
+ 
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" data-bs-target="#faqsOne-1" type="button" data-bs-toggle="collapse">
+                   1. Does Syntway offer custom web design and development services?
+                 </button>
+               </h2>
+               <div id="faqsOne-1" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                 <div class="accordion-body">
+                   Yes, Syntway specializes in creating custom websites tailored to the unique needs and preferences of each client. We develop responsive, user-friendly, and visually appealing websites.
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" data-bs-target="#faqsOne-2" type="button" data-bs-toggle="collapse">
+                   2. What technologies does Syntway use for web development?
+                 </button>
+               </h2>
+               <div id="faqsOne-2" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                 <div class="accordion-body">
+                   Syntway utilizes the latest web development technologies, including HTML5, CSS3, JavaScript, Bootstrap, React, Angular, and PHP, to build robust and modern websites.
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" data-bs-target="#faqsOne-3" type="button" data-bs-toggle="collapse">
+                   3. Can Syntway redesign an existing website?
+                 </button>
+               </h2>
+               <div id="faqsOne-3" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                 <div class="accordion-body">
+                   Yes, we offer website redesign services to refresh and modernize existing websites, incorporating new features and optimizing user experience.
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" data-bs-target="#faqsOne-4" type="button" data-bs-toggle="collapse">
+                   4. Is Syntway experienced in e-commerce website development?
+                 </button>
+               </h2>
+               <div id="faqsOne-4" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                 <div class="accordion-body">
+                   Absolutely! Syntway has extensive experience in developing secure and efficient e-commerce websites, including online stores, shopping carts, and payment gateway integration.
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" data-bs-target="#faqsOne-5" type="button" data-bs-toggle="collapse">
+                   5. Does Syntway provide website maintenance services?
+                 </button>
+               </h2>
+               <div id="faqsOne-5" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                 <div class="accordion-body">
+                   Yes, we offer website maintenance plans to ensure that your website is regularly updated, secure, and functioning optimally.
+                 </div>
+               </div>
+             </div>
+ 
+           </div>
+ 
+         </div>
+       </div><!-- End F.A.Q Group 1 -->
+ 
+     </div>
+ 
+     <div class="col-md-6">
+ 
+       <!-- F.A.Q Group 2 -->
+       <div class="card" data-aos="fade-up-right">
+         <div class="card-body">
+           <h5 class="card-title">Education related questions</h5>
+ 
+           <div class="accordion accordion-flush" id="faq-group-2">
+ 
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" data-bs-target="#faqsTwo-1" type="button" data-bs-toggle="collapse">
+                   Cumque voluptatem recusandae blanditiis?
+                 </button>
+               </h2>
+               <div id="faqsTwo-1" class="accordion-collapse collapse" data-bs-parent="#faq-group-2">
+                 <div class="accordion-body">
+                   Ut quasi odit odio totam accusamus vero eius. Nostrum asperiores voluptatem eos nulla ab dolores est asperiores iure. Quo est quis praesentium aut maiores. Corrupti sed aut expedita fugit vero dolorem. Nemo rerum sapiente. A quaerat dignissimos.
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" data-bs-target="#faqsTwo-2" type="button" data-bs-toggle="collapse">
+                   Provident beatae eveniet placeat est aperiam repellat adipisci?
+                 </button>
+               </h2>
+               <div id="faqsTwo-2" class="accordion-collapse collapse" data-bs-parent="#faq-group-2">
+                 <div class="accordion-body">
+                   In minus quia impedit est quas deserunt deserunt et. Nulla non quo dolores minima fugiat aut saepe aut inventore. Qui nesciunt odio officia beatae iusto sed voluptatem possimus quas. Officia vitae sit voluptatem nostrum a.
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" data-bs-target="#faqsTwo-3" type="button" data-bs-toggle="collapse">
+                   Minus aliquam modi id reprehenderit nihil?
+                 </button>
+               </h2>
+               <div id="faqsTwo-3" class="accordion-collapse collapse" data-bs-parent="#faq-group-2">
+                 <div class="accordion-body">
+                   Voluptates magni amet enim perspiciatis atque excepturi itaque est. Sit beatae animi incidunt eum repellat sequi ea saepe inventore. Id et vel et et. Nesciunt itaque corrupti quia ducimus. Consequatur maiores voluptatum fuga quod ut non fuga.
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" data-bs-target="#faqsTwo-4" type="button" data-bs-toggle="collapse">
+                   Quaerat qui est iusto asperiores qui est reiciendis eos et?
+                 </button>
+               </h2>
+               <div id="faqsTwo-4" class="accordion-collapse collapse" data-bs-parent="#faq-group-2">
+                 <div class="accordion-body">
+                   Numquam ut reiciendis aliquid. Quia veritatis quasi ipsam sed quo ut eligendi et non. Doloremque sed voluptatem at in voluptas aliquid dolorum.
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" data-bs-target="#faqsTwo-5" type="button" data-bs-toggle="collapse">
+                   Laboriosam asperiores eum?
+                 </button>
+               </h2>
+               <div id="faqsTwo-5" class="accordion-collapse collapse" data-bs-parent="#faq-group-2">
+                 <div class="accordion-body">
+                   Aut necessitatibus maxime quis dolor et. Nihil laboriosam molestiae qui molestias placeat corrupti non quo accusamus. Nemo qui quis harum enim sed. Aliquam molestias pariatur delectus voluptas quidem qui rerum id quisquam. Perspiciatis voluptatem voluptatem eos. Vel aut minus labore at rerum eos.
+                 </div>
+               </div>
+             </div>
+ 
+           </div>
+ 
+         </div>
+       </div><!-- End F.A.Q Group 2 -->
+ 
+       <!-- F.A.Q Group 3 -->
+       <div class="card" data-aos="fade-down-right">
+         <div class="card-body">
+           <h5 class="card-title">Company related questions</h5>
+ 
+           <div class="accordion accordion-flush" id="faq-group-3">
+ 
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" data-bs-target="#faqsThree-1" type="button" data-bs-toggle="collapse">
+                   Assumenda doloribus est fugiat sint incidunt animi totam nisi?
+                 </button>
+               </h2>
+               <div id="faqsThree-1" class="accordion-collapse collapse" data-bs-parent="#faq-group-3">
+                 <div class="accordion-body">
+                   Ut quasi odit odio totam accusamus vero eius. Nostrum asperiores voluptatem eos nulla ab dolores est asperiores iure. Quo est quis praesentium aut maiores. Corrupti sed aut expedita fugit vero dolorem. Nemo rerum sapiente. A quaerat dignissimos.
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" data-bs-target="#faqsThree-2" type="button" data-bs-toggle="collapse">
+                   Consequatur saepe explicabo odio atque nisi?
+                 </button>
+               </h2>
+               <div id="faqsThree-2" class="accordion-collapse collapse" data-bs-parent="#faq-group-3">
+                 <div class="accordion-body">
+                   In minus quia impedit est quas deserunt deserunt et. Nulla non quo dolores minima fugiat aut saepe aut inventore. Qui nesciunt odio officia beatae iusto sed voluptatem possimus quas. Officia vitae sit voluptatem nostrum a.
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" data-bs-target="#faqsThree-3" type="button" data-bs-toggle="collapse">
+                   Voluptates vel est fugiat molestiae rem sit eos sint?
+                 </button>
+               </h2>
+               <div id="faqsThree-3" class="accordion-collapse collapse" data-bs-parent="#faq-group-3">
+                 <div class="accordion-body">
+                   Voluptates magni amet enim perspiciatis atque excepturi itaque est. Sit beatae animi incidunt eum repellat sequi ea saepe inventore. Id et vel et et. Nesciunt itaque corrupti quia ducimus. Consequatur maiores voluptatum fuga quod ut non fuga.
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" data-bs-target="#faqsThree-4" type="button" data-bs-toggle="collapse">
+                   Ab ipsa cum autem voluptas doloremque velit?
+                 </button>
+               </h2>
+               <div id="faqsThree-4" class="accordion-collapse collapse" data-bs-parent="#faq-group-3">
+                 <div class="accordion-body">
+                   Numquam ut reiciendis aliquid. Quia veritatis quasi ipsam sed quo ut eligendi et non. Doloremque sed voluptatem at in voluptas aliquid dolorum.
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" data-bs-target="#faqsThree-5" type="button" data-bs-toggle="collapse">
+                   Aliquam magni ducimus facilis numquam dolorum harum eveniet iusto?
+                 </button>
+               </h2>
+               <div id="faqsThree-5" class="accordion-collapse collapse" data-bs-parent="#faq-group-3">
+                 <div class="accordion-body">
+                   Aut necessitatibus maxime quis dolor et. Nihil laboriosam molestiae qui molestias placeat corrupti non quo accusamus. Nemo qui quis harum enim sed. Aliquam molestias pariatur delectus voluptas quidem qui rerum id quisquam. Perspiciatis voluptatem voluptatem eos. Vel aut minus labore at rerum eos.
+                 </div>
+               </div>
+             </div>
+ 
+           </div>
+ 
+         </div>
+       </div><!-- End F.A.Q Group 3 -->
+ 
+     </div>
+ 
+   </div>
+ 
+ </main><!-- End #main -->
+
+ <main id="contact" class="container-fluid py-2">
+
+   <h1 class="web-title text-center pb-4">Contact Us</h1>
+ 
+   <div class="row">
+   
+     <!-- Contact Information -->
+     <div class="col-lg-6">
+       <div class="row">
+ 
+         <div class="col-md-6">
+           <div class="info-box card" data-aos="fade-up-left">
+             <i class="bi bi-geo-alt"></i>
+             <h3>Address</h3>
+             <p>Khaga Fatehpur<br>Uttar pradesh IN-212655</p>
+           </div>
+         </div>
+ 
+         <div class="col-md-6">
+           <div class="info-box card" data-aos="fade-up-right">
+             <i class="bi bi-telephone"></i>
+             <h3>Call Us</h3>
+             <p>
+               <a href="tel:+918948263861">+91 89482 63861</a><br>
+               <a href="tel:+917310089887">+91 73100 89887</a>  
+             </p>
+           </div>
+         </div>
+ 
+         <div class="col-md-6">
+           <div class="info-box card" data-aos="fade-down-left">
+             <i class="bi bi-envelope"></i>
+             <h3>Email Us</h3>
+             <p>
+               <a href="mailto:synt.way@gmail.com">synt.way@gmail.com</a><br>
+               <a href="mailto:synt.way@syntway.org">synt.way@syntway.org</a>
+             </p>
+           </div>
+         </div>
+ 
+         <div class="col-md-6">
+           <div class="info-box card" data-aos="fade-down-right">
+             <i class="bi bi-clock"></i>
+             <h3>Open Hours</h3>
+             <p>Monday - Saturday<br>9:00AM - 05:00PM</p>
+           </div>
+         </div>
+ 
+       </div>
+     </div>
+     <!-- End Contact Information -->
+ 
+     <!-- Contact Form -->
+     <div class="col-lg-6">
+         <div class="card p-4" data-aos="zoom-in">
+         <form class="needs-validation php-email-form" novalidate action="" method="post" id="emailForm">
+             <div class="row">
+                 <div class="col-md-6 form-group input">
+                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                     <div class="invalid-feedback">Please enter your First name.</div>
+                 </div>
+ 
+                 <div class="col-md-6 form-group mt-3 mt-md-0">
+                     <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                     <div class="invalid-feedback">Please enter your email address.</div>
+                 </div>
+             </div>
+ 
+             <div class="form-group mt-3">
+                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                 <div class="invalid-feedback">Please enter your subject.</div>
+             </div>
+ 
+             <div class="form-group mt-3">
+                 <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                 <div class="invalid-feedback">Please enter your message.</div>
+             </div>
+             <!-- loading spinner -->
+             <div class="my-3 d-flex justify-content-center">
+                 <div class="spinner-border text-primary d-none align-self-center" role="status" id="loadingSpinner">
+                     <span class="sr-only"></span>
+                 </div>
+             </div>
+             <!-- alert message -->
+             <div class="my-3">
+                 <div class="alert alert-success d-none" role="alert" id="successMessage"></div>
+                 <div class="alert alert-danger d-none" role="alert" id="errorMessage"></div>
+             </div>
+ 
+             <div class="text-center mt-3">
+                 <button type="submit" class="btn btn-primary">Send Message</button>
+             </div>
+           </form>
+         </div>
+     </div><!-- End Contact Form -->
+ 
+   </div>
+ 
+ </main><!-- End #main -->
+ 
+      <!-- footer section -->
+      <footer id="footer">
+
+         <div class="footer-top bg-black pt-5">
+            <div class="container-fluid bg-black">
+                  <div class="row">
+   
+                     <div class="col-lg-2 col-md-4 footer-contact">
+                        <h3 data-aos="fade-right">Syntway</h3>
+                        <p data-aos="fade-right" class="mb-3">
+                           Chak babullapur mohkam <br>
+                           Khaga Fatehpur UP <br>
+                           India - 212655 <br>
+                        </p>
+                        <div data-aos="fade-right">
+                           <strong>Phone:</strong> <a href="tel:+918948263861">+91 89482-63861</a><br>
+                           <strong>Email:</strong> <a href="mailto:synt.way@gmail.com">synt.way@gmail.com</a><br>
+                        </div>
+                     </div>
+   
+                     <div class="col-lg-2 col-md-4 footer-links">
+                        <h4 data-aos="fade-right">Useful Links</h4>
+                        <ul data-aos="fade-right">
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="./">Home</a></li>
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="./about.html">About us</a></li>
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="./services.html">Services</a></li>
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="./terms.html">Terms of service</a></li>
+                           <li><i class="bi bi-chevron-right"></i></i> <a href="./privacy.html">Privacy policy</a></li>
+                        </ul>
+                     </div>
+   
+                     <div class="col-lg-2 col-md-4 footer-links">
+                        <h4 data-aos="fade-right">Services</h4>
+                        <ul data-aos="fade-right">
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Web Development</a></li>
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Web Design</a></li>
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Product Management</a></li>
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Marketing</a></li>
+                           <li><i class="bi bi-chevron-right"></i></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                     </div>
+   
+                     <div class="col-lg-2 col-md-4 footer-links">
+                        <h4 data-aos="fade-right">Learning </h4>
+                        <ul data-aos="fade-right">
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Home</a></li>
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">About us</a></li>
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Services</a></li>
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Terms of service</a></li>
+                           <li><i class="bi bi-chevron-right"></i></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                     </div>
+   
+                     <div class="col-lg-2 col-md-4 footer-links">
+                        <h4 data-aos="fade-right">Management</h4>
+                        <ul data-aos="fade-right">
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Web Design</a></li>
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Web Development</a></li>
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Product Management</a></li>
+                           <li data-aos="fade-right"><i class="bi bi-chevron-right"></i></i> <a href="#">Marketing</a></li>
+                           <li><i class="bi bi-chevron-right"></i></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                     </div>
+   
+                     <div class="col-lg-2 col-md-4 footer-newsletter">
+                        <h4 data-aos="fade-right">Join Our Newsletter</h4>
+                        <p data-aos="fade-right">Innovative solutions define our cutting-edge software company. Join our journey!</p>
+                        <form action="" method="post" data-aos="fade-right">
+                           <input type="email" name="email" placeholder="E-mail address">
+                           <input type="submit" value="Join">
+                        </form>
+                     </div>
+   
+                  </div>
+               </div>
+               </div>
+   
+               <div class="container-fluid d-md-flex py-3 bg-black">
+   
+                  <div class="me-md-auto text-center text-md-start">
+                     <div class="copyright">
+                        <span>&COPY; Copyright <strong>Syntway</strong>. All Rights Reserved</span>
+                     </div>
+                     <!-- <div class="credits">
+                        Designed by <a href="https://syntway.org/">Syntway</a>
+                     </div> -->
+                  </div>
+                  <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                     <a href="https://twitter.com/synt_way" class="twitter"><i class="bi bi-twitter"></i></a>
+                     <a href="https://www.facebook.com/profile.php?id=100093432069582" class="facebook"><i class="bi bi-facebook"></i></a>
+                     <a href="https://g.dev/syntway" class="google"><i class="bi bi-google"></i></a>
+                     <a href="https://www.linkedin.com/in/syntway" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                     <a href="https://github.com/synt-way" class="github"><i class="bi bi-github"></i></a>
+                  </div>
+   
+               </div>
+            </div>
+         </div>
+   
+      </footer>
+      <!-- End footer section -->
+   <!-- node_module js file -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/1.2.3/js/glightbox.min.js"></script>
+   <script src="./assets/node_modules/swiper/swiper-bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/php-email-form/3.2.1/validate.min.js"></script>
+   
+   <!-- custom js file -->
+   <script type="module" src="./assets/js/script.js"></script>
 </body>
 </html>

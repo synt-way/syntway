@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- meta data -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Syntway</title>
+
+   <!-- favicon -->
+   <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+   <link rel="apple-touch-icon" href="assets/img/logo.png">
+
+   <!-- node_module css file -->
+
+   <!-- <link rel="stylesheet" href="./assets/node_modules/google.font/index.css"> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/1.2.3/css/glightbox.min.css">
+   <link rel="stylesheet" href="./assets/node_modules/swiper/swiper-bundle.min.css">
+
+   <!-- custom css file -->
+   <link rel="stylesheet" href="./assets/css/style.css">
+   
+</head>
+<body>
+   <!-- signup section -->
+<section class="vh-100 d-flex align-items-center justify-content-center">
+   <div class="container">
+     <div class="row justify-content-center">
+       <div class="col-lg-4 col-md-6">
+ 
+         <div class="card border-0">
+           <div class="card-body">
+             <!-- logo section -->
+             <div class="text-center">
+               <h3><a href="index.html" class="brand-title fs-3">SYNTWAY</a></h3>
+             </div><!-- End Logo -->
+ 
+             <h5 class="web-title text-center mb-3 p-0 fw-200 fs-5">Sign up</h5>
+ 
+             <form class="needs-validation" novalidate action="./form/signup.php" method="post">
+ 
+               <div class="mb-3">
+                 <label for="fname" class="form-label">First name</label>
+                 <input type="text" name="fname" class="form-control" id="fname" required>
+                 <div class="invalid-feedback">Please enter your First name.</div>
+               </div>
+               
+               <div class="mb-3">
+                 <label for="lname" class="form-label">Last name</label>
+                 <input type="text" name="lname" class="form-control" id="lname" required>
+                 <div class="invalid-feedback">Please enter your Last name.</div>
+               </div>
+ 
+               <div class="mb-3">
+                 <label for="username" class="form-label">Username</label>
+                 <div class="input-group">
+                   <span class="input-group-text" id="inputGroupPrepend">@</span>
+                   <input type="email" name="username" class="form-control" id="username" required style="border-radius: 0 6px 6px 0;" placeholder="example@gmail.com" autocomplete="email">
+                   <div class="invalid-feedback">Please enter a valid email address.</div>
+                 </div>
+               </div>
+ 
+               <div class="mb-3">
+                 <label for="password" class="form-label">Password</label>
+                 <input type="password" name="password" class="form-control" id="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$">
+                 <div class="invalid-feedback">Requires a lowercase, uppercase, number, special character and 8+ characters.</div>
+               </div>
+ 
+               <div class="mb-3">
+                 <div class="form-check">
+                   <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
+                   <label class="form-check-label" for="terms">I agree and accept the <a href="./terms.html" class="text-primary">terms and conditions</a></label>
+                   <!-- <div class="invalid-feedback">You must agree before submitting.</div> -->
+                 </div>
+               </div>
+ 
+               <div class="mb-3">
+                 <button class="btn btn-primary w-100" type="submit">Create Account</button>
+               </div>
+               <div>
+                 <p class="text-center mb-0 small">Already have an account? <a href="./signin.html" class="text-primary">Sign in</a></p>
+               </div>
+             </form>
+ 
+           </div>
+         </div>
+ 
+       </div>
+     </div>
+   </div>
+ 
+ </section>
+ 
+   <!-- node_module js file -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/1.2.3/js/glightbox.min.js"></script>
+   <script src="./assets/node_modules/swiper/swiper-bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/php-email-form/3.2.1/validate.min.js"></script>
+   
+   <!-- custom js file -->
+   <script type="module" src="./assets/js/script.js"></script>
+</body>
+</html>
