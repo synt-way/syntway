@@ -394,13 +394,14 @@
                   <div class="col-lg-2 col-md-4 footer-contact">
                      <h3 data-aos="fade-right">Syntway</h3>
                      <p data-aos="fade-right" class="mb-3">
-                        Chak babullapur mohkam <br>
+                     <!-- Chak babullapur mohkam <br> -->
+                        Tilochanpur<br> 
                         Khaga Fatehpur UP <br>
                         India - 212655 <br>
                      </p>
                      <div data-aos="fade-right">
                         <strong>Phone:</strong> <a href="tel:+918948263861">+91 89482-63861</a><br>
-                        <strong>Email:</strong> <a href="mailto:synt.way@gmail.com">synt.way@gmail.com</a><br>
+                        <strong>Email:</strong> <a href="mailto:ceo@syntway.io">ceo@syntway.io</a><br>
                      </div>
                   </div>
 
@@ -465,7 +466,10 @@
 
                <div class="me-md-auto text-center text-md-start">
                   <div class="copyright">
-                     <span>&COPY; Copyright <strong>Syntway</strong>. All Rights Reserved</span>
+                    <!-- Copyright text with auto-updating year -->
+                     <span>
+                       © <span id="year"></span> <strong>Syntway</strong>. All rights reserved.
+                     </span>
                   </div>
                   <!-- <div class="credits">
                      Designed by <a href="https://syntway.org/">Syntway</a>
@@ -498,5 +502,12 @@
    
    <!-- custom js file -->
    <script type="module" src="./assets/js/script.js"></script>
+   <script>
+     // Get the current year from the system (e.g., 2025)
+     const currentYear = new Date().getFullYear();
+   
+     // Insert the current year into the <span id="year"> element
+     document.getElementById("year").textContent = currentYear;
+   </script>
 </body>
 </html>
